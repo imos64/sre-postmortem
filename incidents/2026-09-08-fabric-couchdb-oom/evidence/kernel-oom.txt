@@ -1,0 +1,1 @@
+[374015.013343] Memory cgroup out of memory: Killed process 834783 (beam.smp) total-vm:3288792kB, anon-rss:521920kB, file-rss:1760kB, shmem-rss:0kB, UID:5984 pgtables:1172kB oom_score_adj:996

@@ -1,0 +1,16 @@
+# Private evidence and credentials must not enter this public repository.
+/private/
+/raw-evidence/
+/evidence-bundles/
+*.zip
+*.tar
+*.tar.gz
+*.dockerbuild
+*.pem
+*.key
+.env
+.env.*
+kubeconfig
+kubeconfig.*
+__pycache__/
+.DS_Store

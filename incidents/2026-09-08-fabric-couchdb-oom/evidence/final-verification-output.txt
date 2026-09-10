@@ -1,0 +1,2 @@
+All 17 affected workloads ready; both Argo applications Synced/Healthy. Explorer age seconds: 339 restarts: [0]
+Explorer HTTP 200

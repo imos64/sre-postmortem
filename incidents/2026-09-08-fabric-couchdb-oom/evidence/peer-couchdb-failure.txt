@@ -1,0 +1,1 @@
+2026-09-08 13:19:52.570 UTC 000c WARN [couchdb] handleRequest -> Attempt 1 of 11 returned error: Get "http://peer0-cbo-couchdb:5984/": dial tcp <couchdb-service-ip>:5984: connect: connection refused. Retrying couchdb request in 125ms

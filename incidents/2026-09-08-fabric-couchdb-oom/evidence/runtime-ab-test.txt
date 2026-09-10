@@ -1,0 +1,4 @@
+Same pinned CouchDB image; diagnostic Pod with no volumes, 512Mi memory limit and 500m CPU.
+Inherited RLIMIT_NOFILE=1073741816 (soft and hard).
+Erlang start_clean +Q 65536: exit 0, port_limit=65536 memory=23791736 schedulers=20.
+Same command without +Q: exit 137; diagnostic Pod OOMKilled.

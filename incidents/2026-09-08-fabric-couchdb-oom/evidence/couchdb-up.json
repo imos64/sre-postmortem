@@ -1,0 +1,58 @@
+[
+  {
+    "pod": "peer0-cbo-couchdb-fd6cb9fb-5w85t",
+    "response": {
+      "status": "ok",
+      "seeds": {}
+    }
+  },
+  {
+    "pod": "peer0-greenstand-couchdb-649bbc6d9b-hmxbz",
+    "response": {
+      "status": "ok",
+      "seeds": {}
+    }
+  },
+  {
+    "pod": "peer0-investor-couchdb-589f56b476-xgq9d",
+    "response": {
+      "status": "ok",
+      "seeds": {}
+    }
+  },
+  {
+    "pod": "peer0-verifier-couchdb-9bfc4cc7b-q5vj8",
+    "response": {
+      "status": "ok",
+      "seeds": {}
+    }
+  },
+  {
+    "pod": "peer1-cbo-couchdb-6fdb798947-cjj8h",
+    "response": {
+      "status": "ok",
+      "seeds": {}
+    }
+  },
+  {
+    "pod": "peer1-greenstand-couchdb-5c8698947f-hrmkp",
+    "response": {
+      "status": "ok",
+      "seeds": {}
+    }
+  },
+  {
+    "pod": "peer1-investor-couchdb-69bcc6cf79-hn2wv",
+    "response": {
+      "status": "ok",
+      "seeds": {}
+    }
+  },
+  {
+    "pod": "peer2-greenstand-couchdb-86d8459566-b2zjw",
+    "response": {
+      "status": "ok",
+      "seeds": {}
+    }
+  }
+]

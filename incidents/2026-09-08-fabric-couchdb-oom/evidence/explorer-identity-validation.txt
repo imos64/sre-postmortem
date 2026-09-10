@@ -1,0 +1,5 @@
+Existing dedicated current-root OU=client identity queried legacy treetracker successfully: height 22; currentBlockHash hfwtXYmjUHmFrgAQDm0NScOMnEXS62T61VztKmo9d74=.
+TLS to orderer0 with historical trust bundle failed: unable to verify the first certificate.
+TLS to the same orderer using current trust bundle passed with rejectUnauthorized=true.
+Init sync-wallet refreshed treetracker entry; treetracker-v2 entry already matched.
+No channel policy or signing Secret was modified.

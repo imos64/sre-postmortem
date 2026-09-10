@@ -1,0 +1,127 @@
+{
+  "incident": "FABRIC-2026-09-08",
+  "private_archive_sha256": "dbb8222af8ba464a6913c94c36b73990d7a2b74b7c5788f2676804b97053e07b",
+  "artifacts": [
+    {
+      "file": "runtime-ab-test.txt",
+      "source": "private archive/original-incident/runtime-ab-test.txt",
+      "sha256": "44757faa207a6cd53fd2355e6530d0708aaccef2b42608817e33458474df1f9e",
+      "transformation": "none; original retained file bytes",
+      "record_type": "investigator summary"
+    },
+    {
+      "file": "explorer-identity-validation.txt",
+      "source": "private archive/original-incident/explorer-identity-validation.txt",
+      "sha256": "6032d4dda1ffee3d7516d9818da51d80aad6db95890176fcf3d1650fdbc846a8",
+      "transformation": "none; original retained file bytes",
+      "record_type": "investigator summary"
+    },
+    {
+      "file": "couchdb-up.json",
+      "source": "private archive/original-incident/couchdb-up.json",
+      "sha256": "62985761cb72fd83c1ffa98f92fade9326e51884c468fb0fe639398f932a67f9",
+      "transformation": "none; original retained file bytes",
+      "record_type": "historical verification record"
+    },
+    {
+      "file": "ledger-verification.json",
+      "source": "private archive/original-incident/ledger-verification.json",
+      "sha256": "3cc6ae76daa41c1c96f0149c15788ef9c075f50b2e25586a5d21692cb2053d97",
+      "transformation": "none; original retained file bytes",
+      "record_type": "historical verification record"
+    },
+    {
+      "file": "final-verification.json",
+      "source": "private archive/original-incident/final-verification.json",
+      "sha256": "5c381f2f83eaeb70080bc946d571d3641fd5daf481410505938ef05e15ead2a0",
+      "transformation": "none; original retained file bytes",
+      "record_type": "historical verification record"
+    },
+    {
+      "file": "kernel-oom.txt",
+      "source": "private archive/logs/04-part-02.log",
+      "source_sha256": "e21ccc7104e441a7c7e13d0fc314e20683c7031b7f8e96e9bba5d289440d6bac",
+      "source_lines": [
+        236
+      ],
+      "sha256": "84a7b1f0444bb3cd42178a383743caff74ae0ea7c90f3c2b0c614e168e2a2c90",
+      "transformation": "selected lines; ANSI color escapes removed; private Service IP replaced with <couchdb-service-ip> where present",
+      "record_type": "retained command output excerpt"
+    },
+    {
+      "file": "erlang-capped.txt",
+      "source": "private archive/logs/11-part-02.log",
+      "source_sha256": "21e62e78bf5e8595551abc19779fce34366dae623dd7e92f5b83f6a0899c05ec",
+      "source_lines": [
+        1
+      ],
+      "sha256": "21e62e78bf5e8595551abc19779fce34366dae623dd7e92f5b83f6a0899c05ec",
+      "transformation": "selected lines; ANSI color escapes removed; private Service IP replaced with <couchdb-service-ip> where present",
+      "record_type": "retained command output excerpt"
+    },
+    {
+      "file": "erlang-uncapped.txt",
+      "source": "private archive/logs/11-part-03.log",
+      "source_sha256": "2bbf726d9d4e9605d9142620759366247fd3f4368e3a1a7290e962904bbc4efe",
+      "source_lines": [
+        1
+      ],
+      "sha256": "2bbf726d9d4e9605d9142620759366247fd3f4368e3a1a7290e962904bbc4efe",
+      "transformation": "selected lines; ANSI color escapes removed; private Service IP replaced with <couchdb-service-ip> where present",
+      "record_type": "retained command output excerpt"
+    },
+    {
+      "file": "peer-couchdb-failure.txt",
+      "source": "private archive/logs/02-part-02.log",
+      "source_sha256": "5cb6d40320b8b12c7cc525a043d3ba321c5c01a8f039e33491e2e2af8e810245",
+      "source_lines": [
+        10
+      ],
+      "sha256": "3b4ae5bbe1f28611e0039a38e0e934d9c5596ac2b95e50b3947ce62d3c88a042",
+      "transformation": "selected lines; ANSI color escapes removed; private Service IP replaced with <couchdb-service-ip> where present",
+      "record_type": "retained command output excerpt"
+    },
+    {
+      "file": "explorer-tls-failure.txt",
+      "source": "private archive/logs/24-part-02.log",
+      "source_sha256": "22c5758c78e6d9e41daa652a9a8814113cb5993dce5f6d549b908a759e080699",
+      "source_lines": [
+        2
+      ],
+      "sha256": "fb72f0ed037442d68b9ceda1183592a2025c5c812d67fa1bf7dd8430d78be765",
+      "transformation": "selected lines; ANSI color escapes removed; private Service IP replaced with <couchdb-service-ip> where present",
+      "record_type": "retained command output excerpt"
+    },
+    {
+      "file": "explorer-wallet-refresh.txt",
+      "source": "private archive/logs/32-part-02.log",
+      "source_sha256": "b7acd35acb10084c76ecb42b3cf750060d1c71dda8497a0ce106809c09ecedd5",
+      "source_lines": [
+        11
+      ],
+      "sha256": "1905e8493754ffa15b22a0b243658690da57b04e90e3cc73653628d0670e3332",
+      "transformation": "selected lines; ANSI color escapes removed; private Service IP replaced with <couchdb-service-ip> where present",
+      "record_type": "retained command output excerpt"
+    },
+    {
+      "file": "final-verification-output.txt",
+      "source": "private archive/logs/38-part-03.log",
+      "source_sha256": "d450d73de92e8cb747844ba68c9f70af7ccc9019cfbdf0f55b85e4464d8418ef",
+      "source_lines": [
+        1,
+        7
+      ],
+      "sha256": "6469d04bbe199b4b16d9225498bbd4850b34d2da4b0eb1aa2d20b28b3193ea02",
+      "transformation": "selected lines; ANSI color escapes removed; private Service IP replaced with <couchdb-service-ip> where present",
+      "record_type": "retained command output excerpt"
+    },
+    {
+      "file": "ci-runs.json",
+      "source": "private archive/ci/runs-summary.json",
+      "sha256": "22cffde6cfc711b4ef79d507fa03627c8a5399216c36d9453b2422d3b50cc22a",
+      "transformation": "removed local directory field; added access and retrieval notes",
+      "record_type": "historical CI summary"
+    }
+  ],
+  "scope": "Selected public evidence; not the complete private archive. No new cluster checks were performed."
+}

@@ -1,0 +1,118 @@
+[
+  {
+    "peer": "peer0-cbo-0",
+    "listExit": 0,
+    "channels": [
+      "treetracker",
+      "treetracker-v2"
+    ],
+    "ledgers": {
+      "treetracker": {
+        "error": "d\nError: received bad response, status 500: access denied for [GetChainInfo][treetracker]: [Failed evaluating policy on signed data during check policy on channel [treetracker] with policy [/Channel/Application/Readers]: [implicit policy evaluation failed - 0 sub-policies were satisfied, but this policy requires 1 of the 'Readers' sub-policies to be satisfied]]\ncommand terminated with exit code 1\n",
+        "exit": 1
+      },
+      "treetracker-v2": {
+        "height": 13,
+        "currentBlockHash": "ZfG2dHqJ9vunlBIrJA4/5BGfDLM5Ei5iYWKJGu7aSg0=",
+        "previousBlockHash": "M0zfetaSWvVCLGQAJLNZluiJtKo5kfcQjIhSdf6P1L8="
+      }
+    }
+  },
+  {
+    "peer": "peer1-cbo-0",
+    "listExit": 0,
+    "channels": [
+      "treetracker",
+      "treetracker-v2"
+    ],
+    "ledgers": {
+      "treetracker": {
+        "error": "d\nError: received bad response, status 500: access denied for [GetChainInfo][treetracker]: [Failed evaluating policy on signed data during check policy on channel [treetracker] with policy [/Channel/Application/Readers]: [implicit policy evaluation failed - 0 sub-policies were satisfied, but this policy requires 1 of the 'Readers' sub-policies to be satisfied]]\ncommand terminated with exit code 1\n",
+        "exit": 1
+      },
+      "treetracker-v2": {
+        "height": 13,
+        "currentBlockHash": "ZfG2dHqJ9vunlBIrJA4/5BGfDLM5Ei5iYWKJGu7aSg0=",
+        "previousBlockHash": "M0zfetaSWvVCLGQAJLNZluiJtKo5kfcQjIhSdf6P1L8="
+      }
+    }
+  },
+  {
+    "peer": "peer0-greenstand-0",
+    "listExit": 0,
+    "channels": [
+      "treetracker",
+      "treetracker-v2"
+    ],
+    "ledgers": {
+      "treetracker": {
+        "height": 22,
+        "currentBlockHash": "hfwtXYmjUHmFrgAQDm0NScOMnEXS62T61VztKmo9d74=",
+        "previousBlockHash": "SXKcwWSbSDK4Go8IFq7smH7lbiamiROCtq8/Hr3idZQ="
+      },
+      "treetracker-v2": {
+        "height": 13,
+        "currentBlockHash": "ZfG2dHqJ9vunlBIrJA4/5BGfDLM5Ei5iYWKJGu7aSg0=",
+        "previousBlockHash": "M0zfetaSWvVCLGQAJLNZluiJtKo5kfcQjIhSdf6P1L8="
+      }
+    }
+  },
+  {
+    "peer": "peer1-greenstand-0",
+    "listExit": 0,
+    "channels": [
+      "treetracker",
+      "treetracker-v2"
+    ],
+    "ledgers": {
+      "treetracker": {
+        "height": 22,
+        "currentBlockHash": "hfwtXYmjUHmFrgAQDm0NScOMnEXS62T61VztKmo9d74=",
+        "previousBlockHash": "SXKcwWSbSDK4Go8IFq7smH7lbiamiROCtq8/Hr3idZQ="
+      },
+      "treetracker-v2": {
+        "height": 13,
+        "currentBlockHash": "ZfG2dHqJ9vunlBIrJA4/5BGfDLM5Ei5iYWKJGu7aSg0=",
+        "previousBlockHash": "M0zfetaSWvVCLGQAJLNZluiJtKo5kfcQjIhSdf6P1L8="
+      }
+    }
+  },
+  {
+    "peer": "peer2-greenstand-0",
+    "listExit": 0,
+    "channels": [
+      "treetracker",
+      "treetracker-v2"
+    ],
+    "ledgers": {
+      "treetracker": {
+        "height": 22,
+        "currentBlockHash": "hfwtXYmjUHmFrgAQDm0NScOMnEXS62T61VztKmo9d74=",
+        "previousBlockHash": "SXKcwWSbSDK4Go8IFq7smH7lbiamiROCtq8/Hr3idZQ="
+      },
+      "treetracker-v2": {
+        "height": 13,
+        "currentBlockHash": "ZfG2dHqJ9vunlBIrJA4/5BGfDLM5Ei5iYWKJGu7aSg0=",
+        "previousBlockHash": "M0zfetaSWvVCLGQAJLNZluiJtKo5kfcQjIhSdf6P1L8="
+      }
+    }
+  },
+  {
+    "peer": "peer0-investor-0",
+    "listExit": 0,
+    "channels": [],
+    "ledgers": {}
+  },
+  {
+    "peer": "peer1-investor-0",
+    "listExit": 0,
+    "channels": [],
+    "ledgers": {}
+  },
+  {
+    "peer": "peer0-verifier-0",
+    "listExit": 0,
+    "channels": [],
+    "ledgers": {}
+  }
+]

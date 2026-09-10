@@ -1,0 +1,153 @@
+{
+  "hlf-peer-org": [
+    {
+      "name": "peer0-cbo-0",
+      "ready": true,
+      "restarts": [
+        0
+      ],
+      "created": "2026-09-08T13:31:21Z"
+    },
+    {
+      "name": "peer0-cbo-couchdb-fd6cb9fb-5w85t",
+      "ready": true,
+      "restarts": [
+        0
+      ],
+      "created": "2026-09-08T13:30:21Z"
+    },
+    {
+      "name": "peer0-greenstand-0",
+      "ready": true,
+      "restarts": [
+        0
+      ],
+      "created": "2026-09-08T13:31:21Z"
+    },
+    {
+      "name": "peer0-greenstand-couchdb-649bbc6d9b-hmxbz",
+      "ready": true,
+      "restarts": [
+        0
+      ],
+      "created": "2026-09-08T13:30:20Z"
+    },
+    {
+      "name": "peer0-investor-0",
+      "ready": true,
+      "restarts": [
+        197
+      ],
+      "created": "2026-09-05T21:52:34Z"
+    },
+    {
+      "name": "peer0-investor-couchdb-589f56b476-xgq9d",
+      "ready": true,
+      "restarts": [
+        0
+      ],
+      "created": "2026-09-08T13:30:21Z"
+    },
+    {
+      "name": "peer0-verifier-0",
+      "ready": true,
+      "restarts": [
+        0
+      ],
+      "created": "2026-09-08T13:31:21Z"
+    },
+    {
+      "name": "peer0-verifier-couchdb-9bfc4cc7b-q5vj8",
+      "ready": true,
+      "restarts": [
+        0
+      ],
+      "created": "2026-09-08T13:30:21Z"
+    },
+    {
+      "name": "peer1-cbo-0",
+      "ready": true,
+      "restarts": [
+        0
+      ],
+      "created": "2026-09-08T13:31:21Z"
+    },
+    {
+      "name": "peer1-cbo-couchdb-6fdb798947-cjj8h",
+      "ready": true,
+      "restarts": [
+        0
+      ],
+      "created": "2026-09-08T13:30:20Z"
+    },
+    {
+      "name": "peer1-greenstand-0",
+      "ready": true,
+      "restarts": [
+        0
+      ],
+      "created": "2026-09-08T13:31:21Z"
+    },
+    {
+      "name": "peer1-greenstand-couchdb-5c8698947f-hrmkp",
+      "ready": true,
+      "restarts": [
+        0
+      ],
+      "created": "2026-09-08T13:30:20Z"
+    },
+    {
+      "name": "peer1-investor-0",
+      "ready": true,
+      "restarts": [
+        196
+      ],
+      "created": "2026-09-05T21:53:09Z"
+    },
+    {
+      "name": "peer1-investor-couchdb-69bcc6cf79-hn2wv",
+      "ready": true,
+      "restarts": [
+        0
+      ],
+      "created": "2026-09-08T13:30:20Z"
+    },
+    {
+      "name": "peer2-greenstand-0",
+      "ready": true,
+      "restarts": [
+        196
+      ],
+      "created": "2026-09-05T21:51:58Z"
+    },
+    {
+      "name": "peer2-greenstand-couchdb-86d8459566-b2zjw",
+      "ready": true,
+      "restarts": [
+        0
+      ],
+      "created": "2026-09-08T13:30:20Z"
+    }
+  ],
+  "hlf-explorer": [
+    {
+      "name": "explorer-5ff8fd6564-n25jn",
+      "ready": true,
+      "restarts": [
+        0
+      ],
+      "created": "2026-09-08T13:37:55Z"
+    }
+  ],
+  "treetracker-kind-hlf-peer-org": {
+    "revision": "fe1b20d30f20a32b5b4e36c76c00da6a802b4712",
+    "sync": "Synced",
+    "health": "Healthy"
+  },
+  "treetracker-kind-hlf-explorer": {
+    "revision": "3e349bfd8f52af8f634a2e75ddf4406db3ad19c3",
+    "sync": "Synced",
+    "health": "Healthy"
+  },
+  "verifiedAt": "2026-09-08T13:43:34.319799+00:00"
+}
