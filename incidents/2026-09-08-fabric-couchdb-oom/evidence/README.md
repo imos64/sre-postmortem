@@ -1,6 +1,6 @@
 # Public evidence
 
-These records support the [postmortem](../SRE-POSTMORTEM.md). They describe the
+These records support the [postmortem](../2026-09-08-hyperledger-fabric-outage-postmortem.md). They describe the
 September 8, 2026 development incident and recovery; they are not current health checks.
 
 | File | What it records |

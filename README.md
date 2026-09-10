@@ -8,7 +8,7 @@ results from hypotheses and records gaps in the retained evidence.
 
 | Date | Incident | Environment | Outcome |
 | --- | --- | --- | --- |
-| 2026-09-08 | [Recovering a 17-Pod Hyperledger Fabric Development Outage](incidents/2026-09-08-fabric-couchdb-oom/SRE-POSTMORTEM.md) | TreeTracker development network on kind | Eight CouchDBs, eight Fabric peers and Explorer recovered; legacy governance and storage follow-ups remain |
+| 2026-09-08 | [Hyperledger Fabric Development Outage — SRE Postmortem](incidents/2026-09-08-fabric-couchdb-oom/2026-09-08-hyperledger-fabric-outage-postmortem.md) | TreeTracker development network on kind | Eight CouchDBs, eight Fabric peers and Explorer recovered; legacy governance and storage follow-ups remain |
 
 ## Featured incident
 
@@ -30,7 +30,7 @@ flowchart LR
     Trust[Stale identity, TLS trust and wallet] --> Explorer
 ```
 
-[Read the postmortem](incidents/2026-09-08-fabric-couchdb-oom/SRE-POSTMORTEM.md)
+[Read the postmortem](incidents/2026-09-08-fabric-couchdb-oom/2026-09-08-hyperledger-fabric-outage-postmortem.md)
 · [Inspect the public evidence](incidents/2026-09-08-fabric-couchdb-oom/evidence/README.md)
 
 ## Evidence and publication

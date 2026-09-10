@@ -1,4 +1,4 @@
-# Recovering a 17-Pod Hyperledger Fabric Development Outage
+# Hyperledger Fabric Development Outage — SRE Postmortem (2026-09-08)
 
 > Public edition: selected evidence is included in [evidence/](evidence/README.md). The raw archive is private. Upstream fix and CI links require access to the original private repositories.
 
