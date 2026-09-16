@@ -1,0 +1,211 @@
+[
+  {
+    "name": "admin-dashboard-95fb6fd55-g8c8k",
+    "node": "dev-worker2",
+    "containers": [
+      {
+        "name": "admin-dashboard",
+        "ready": true,
+        "restartCount": 9
+      }
+    ]
+  },
+  {
+    "name": "admin-service-6d865d6646-wx8vf",
+    "node": "dev-worker",
+    "containers": [
+      {
+        "name": "admin-service",
+        "ready": true,
+        "restartCount": 9
+      }
+    ]
+  },
+  {
+    "name": "api-gateway-6fb55f9f9f-l5rd4",
+    "node": "dev-worker",
+    "containers": [
+      {
+        "name": "api-gateway",
+        "ready": true,
+        "restartCount": 9
+      }
+    ]
+  },
+  {
+    "name": "auth-service-846fd7f89b-jmzbg",
+    "node": "dev-worker2",
+    "containers": [
+      {
+        "name": "auth-service",
+        "ready": true,
+        "restartCount": 9
+      }
+    ]
+  },
+  {
+    "name": "booking-service-9fbfb8986-zbqdf",
+    "node": "dev-worker",
+    "containers": [
+      {
+        "name": "booking-service",
+        "ready": true,
+        "restartCount": 51
+      }
+    ]
+  },
+  {
+    "name": "client-pwa-6cfd467c44-txqp8",
+    "node": "dev-worker",
+    "containers": [
+      {
+        "name": "client-pwa",
+        "ready": true,
+        "restartCount": 9
+      }
+    ]
+  },
+  {
+    "name": "dispatch-service-6c68f56fb7-6t6sx",
+    "node": "dev-worker",
+    "containers": [
+      {
+        "name": "dispatch-service",
+        "ready": true,
+        "restartCount": 25
+      }
+    ]
+  },
+  {
+    "name": "notification-service-6ff7444d9d-ngfg9",
+    "node": "dev-worker2",
+    "containers": [
+      {
+        "name": "notification-service",
+        "ready": true,
+        "restartCount": 9
+      }
+    ]
+  },
+  {
+    "name": "payment-service-558bd4fbd6-drzsz",
+    "node": "dev-worker2",
+    "containers": [
+      {
+        "name": "payment-service",
+        "ready": true,
+        "restartCount": 9
+      }
+    ]
+  },
+  {
+    "name": "paystack-mock-c79f99dcd-hbpx4",
+    "node": "dev-worker2",
+    "containers": [
+      {
+        "name": "paystack-mock",
+        "ready": true,
+        "restartCount": 9
+      }
+    ]
+  },
+  {
+    "name": "postgres-595f8c5c76-gh78x",
+    "node": "dev-worker2",
+    "containers": [
+      {
+        "name": "postgres",
+        "ready": true,
+        "restartCount": 9
+      }
+    ]
+  },
+  {
+    "name": "rabbitmq-54cb5754b5-rrg6t",
+    "node": "dev-worker",
+    "containers": [
+      {
+        "name": "rabbitmq",
+        "ready": true,
+        "restartCount": 9
+      }
+    ]
+  },
+  {
+    "name": "realtime-service-bb4c6749d-bh8m9",
+    "node": "dev-worker",
+    "containers": [
+      {
+        "name": "realtime-service",
+        "ready": true,
+        "restartCount": 14
+      }
+    ]
+  },
+  {
+    "name": "redis-6bf7d8df8c-4rxdn",
+    "node": "dev-worker2",
+    "containers": [
+      {
+        "name": "redis",
+        "ready": true,
+        "restartCount": 9
+      }
+    ]
+  },
+  {
+    "name": "smoke-7bc69b65f7-rml9v",
+    "node": "dev-worker2",
+    "containers": [
+      {
+        "name": "smoke",
+        "ready": true,
+        "restartCount": 25
+      }
+    ]
+  },
+  {
+    "name": "technician-pwa-67967dc4dd-zm52k",
+    "node": "dev-worker",
+    "containers": [
+      {
+        "name": "technician-pwa",
+        "ready": true,
+        "restartCount": 9
+      }
+    ]
+  },
+  {
+    "name": "technician-service-b9d55f548-7pqbz",
+    "node": "dev-worker",
+    "containers": [
+      {
+        "name": "technician-service",
+        "ready": true,
+        "restartCount": 9
+      }
+    ]
+  },
+  {
+    "name": "user-service-6d77967c84-69wcr",
+    "node": "dev-worker",
+    "containers": [
+      {
+        "name": "user-service",
+        "ready": true,
+        "restartCount": 8
+      }
+    ]
+  },
+  {
+    "name": "warranty-service-66f79f44d-xbqj6",
+    "node": "dev-worker",
+    "containers": [
+      {
+        "name": "warranty-service",
+        "ready": true,
+        "restartCount": 9
+      }
+    ]
+  }
+]

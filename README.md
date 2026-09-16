@@ -12,11 +12,13 @@ Reports focus on system behavior and contributing conditions rather than blame.
 
 | Incident date | Report and architecture | Environment | Recorded outcome |
 | --- | --- | --- | --- |
+| 2026-09-16 | [Fixam4me Booking Service Restarts](incidents/2026-09-16-booking-service-restarts/README.md) | Fixam4me development platform on kind | Automatic recovery observed; unhandled expiry-task rejection identified; dependency connectivity cause and durable fix remain open |
 | 2026-09-08 | [Hyperledger Fabric Development Outage](incidents/2026-09-08-fabric-couchdb-oom/README.md) | TreeTracker development network on kind | 17 affected application Pods recovered; governance, monitoring and storage follow-ups remain |
 
-[Full dated report](incidents/2026-09-08-fabric-couchdb-oom/2026-09-08-hyperledger-fabric-outage-postmortem.md)
-· [Public evidence](incidents/2026-09-08-fabric-couchdb-oom/evidence/README.md)
-· [Incident tag: 2026-09-08](https://github.com/imos64/sre-postmortem/tree/incident-2026-09-08)
+Each incident guide includes its application architecture, marked failure areas,
+full report, and reviewed evidence. The September 16 guide follows the Fixam4me
+user-to-service path and distinguishes the confirmed application failure from the
+unresolved PostgreSQL connection failure.
 
 ## What a postmortem should establish
 

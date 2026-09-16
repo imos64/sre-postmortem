@@ -1,0 +1,210 @@
+[
+  {
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{admin-service}",
+      "kind": "Pod",
+      "name": "admin-service-6d865d6646-wx8vf",
+      "namespace": "fixam4me",
+      "resourceVersion": "2639870",
+      "uid": "cad8a3e1-f3ed-4afe-bf3a-7b0bf7598199"
+    },
+    "reason": "Unhealthy",
+    "message": "Readiness probe failed: Get \"http://10.244.1.26:3010/health/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+    "count": 382,
+    "firstTimestamp": "2026-09-16T00:37:23Z",
+    "lastTimestamp": "2026-09-16T08:00:05Z"
+  },
+  {
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{auth-service}",
+      "kind": "Pod",
+      "name": "auth-service-846fd7f89b-jmzbg",
+      "namespace": "fixam4me",
+      "resourceVersion": "2639969",
+      "uid": "5187aaba-4720-4eb5-8ded-b25dde723a0c"
+    },
+    "reason": "Unhealthy",
+    "message": "Readiness probe failed: Get \"http://10.244.2.37:3001/health/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+    "count": 77,
+    "firstTimestamp": "2026-09-16T00:37:27Z",
+    "lastTimestamp": "2026-09-16T07:58:11Z"
+  },
+  {
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{booking-service}",
+      "kind": "Pod",
+      "name": "booking-service-9fbfb8986-zbqdf",
+      "namespace": "fixam4me",
+      "resourceVersion": "2639926",
+      "uid": "a933dc48-d26a-4c98-abc2-b817182cddfc"
+    },
+    "reason": "Pulled",
+    "message": "Container image \"ghcr.io/fixam4me/booking-service:sha-fb6de2bb9a4f2cd0ae057e626c92d01e30141522\" already present on machine and can be accessed by the pod",
+    "count": 44,
+    "firstTimestamp": "2026-09-16T00:26:19Z",
+    "lastTimestamp": "2026-09-16T08:00:54Z"
+  },
+  {
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{booking-service}",
+      "kind": "Pod",
+      "name": "booking-service-9fbfb8986-zbqdf",
+      "namespace": "fixam4me",
+      "resourceVersion": "2639926",
+      "uid": "a933dc48-d26a-4c98-abc2-b817182cddfc"
+    },
+    "reason": "Created",
+    "message": "Container created",
+    "count": 44,
+    "firstTimestamp": "2026-09-16T00:26:19Z",
+    "lastTimestamp": "2026-09-16T08:00:54Z"
+  },
+  {
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{booking-service}",
+      "kind": "Pod",
+      "name": "booking-service-9fbfb8986-zbqdf",
+      "namespace": "fixam4me",
+      "resourceVersion": "2639926",
+      "uid": "a933dc48-d26a-4c98-abc2-b817182cddfc"
+    },
+    "reason": "Started",
+    "message": "Container started",
+    "count": 44,
+    "firstTimestamp": "2026-09-16T00:26:19Z",
+    "lastTimestamp": "2026-09-16T08:00:54Z"
+  },
+  {
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{booking-service}",
+      "kind": "Pod",
+      "name": "booking-service-9fbfb8986-zbqdf",
+      "namespace": "fixam4me",
+      "resourceVersion": "2639926",
+      "uid": "a933dc48-d26a-4c98-abc2-b817182cddfc"
+    },
+    "reason": "Unhealthy",
+    "message": "Liveness probe failed: Get \"http://10.244.1.20:3003/health\": dial tcp 10.244.1.20:3003: connect: connection refused",
+    "count": 33,
+    "firstTimestamp": "2026-09-16T00:26:50Z",
+    "lastTimestamp": "2026-09-16T07:46:46Z"
+  },
+  {
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{booking-service}",
+      "kind": "Pod",
+      "name": "booking-service-9fbfb8986-zbqdf",
+      "namespace": "fixam4me",
+      "resourceVersion": "2639926",
+      "uid": "a933dc48-d26a-4c98-abc2-b817182cddfc"
+    },
+    "reason": "Unhealthy",
+    "message": "Readiness probe failed: Get \"http://10.244.1.20:3003/health/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+    "count": 202,
+    "firstTimestamp": "2026-09-16T00:37:22Z",
+    "lastTimestamp": "2026-09-16T07:58:09Z"
+  },
+  {
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{notification-service}",
+      "kind": "Pod",
+      "name": "notification-service-6ff7444d9d-ngfg9",
+      "namespace": "fixam4me",
+      "resourceVersion": "2639878",
+      "uid": "0625c4f0-4bb6-4b9c-9268-6a2570cec876"
+    },
+    "reason": "Unhealthy",
+    "message": "Readiness probe failed: Get \"http://10.244.2.3:3005/health/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+    "count": 68,
+    "firstTimestamp": "2026-09-16T00:37:22Z",
+    "lastTimestamp": "2026-09-16T07:58:12Z"
+  },
+  {
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{payment-service}",
+      "kind": "Pod",
+      "name": "payment-service-558bd4fbd6-drzsz",
+      "namespace": "fixam4me",
+      "resourceVersion": "2639849",
+      "uid": "229c0a50-6272-48f4-ab94-31a7c870a39b"
+    },
+    "reason": "Unhealthy",
+    "message": "Readiness probe failed: Get \"http://10.244.2.14:3004/health/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+    "count": 68,
+    "firstTimestamp": "2026-09-16T00:37:24Z",
+    "lastTimestamp": "2026-09-16T07:58:14Z"
+  },
+  {
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{smoke}",
+      "kind": "Pod",
+      "name": "smoke-7bc69b65f7-rml9v",
+      "namespace": "fixam4me",
+      "resourceVersion": "2639653",
+      "uid": "299bf9e1-7045-4eea-8cee-7f594bea4692"
+    },
+    "reason": "Unhealthy",
+    "message": "Readiness probe failed: Get \"http://10.244.2.15:3099/health/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+    "count": 74,
+    "firstTimestamp": "2026-09-16T00:37:23Z",
+    "lastTimestamp": "2026-09-16T07:58:15Z"
+  },
+  {
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{technician-service}",
+      "kind": "Pod",
+      "name": "technician-service-b9d55f548-7pqbz",
+      "namespace": "fixam4me",
+      "resourceVersion": "2639817",
+      "uid": "d72ca149-ef02-4398-9a48-9e5e392e5bb7"
+    },
+    "reason": "Unhealthy",
+    "message": "Readiness probe failed: Get \"http://10.244.1.21:3006/health/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+    "count": 316,
+    "firstTimestamp": "2026-09-16T00:37:28Z",
+    "lastTimestamp": "2026-09-16T08:00:04Z"
+  },
+  {
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{user-service}",
+      "kind": "Pod",
+      "name": "user-service-6d77967c84-69wcr",
+      "namespace": "fixam4me",
+      "resourceVersion": "2640003",
+      "uid": "adafa919-bb93-4501-902f-2e4dada3ef5c"
+    },
+    "reason": "Unhealthy",
+    "message": "Readiness probe failed: Get \"http://10.244.1.25:3002/health/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+    "count": 335,
+    "firstTimestamp": "2026-09-16T00:37:30Z",
+    "lastTimestamp": "2026-09-16T08:00:10Z"
+  },
+  {
+    "involvedObject": {
+      "apiVersion": "v1",
+      "fieldPath": "spec.containers{warranty-service}",
+      "kind": "Pod",
+      "name": "warranty-service-66f79f44d-xbqj6",
+      "namespace": "fixam4me",
+      "resourceVersion": "2639991",
+      "uid": "164b045f-6437-4349-b59d-8c7d4b5052bd"
+    },
+    "reason": "Unhealthy",
+    "message": "Readiness probe failed: Get \"http://10.244.1.24:3008/health/ready\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+    "count": 329,
+    "firstTimestamp": "2026-09-16T00:37:31Z",
+    "lastTimestamp": "2026-09-16T08:00:10Z"
+  }
+]

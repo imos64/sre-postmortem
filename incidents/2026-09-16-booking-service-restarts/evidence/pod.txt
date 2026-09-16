@@ -1,0 +1,234 @@
+{
+  "metadata": {
+    "name": "booking-service-9fbfb8986-zbqdf",
+    "namespace": "fixam4me",
+    "uid": "a933dc48-d26a-4c98-abc2-b817182cddfc",
+    "creationTimestamp": "2026-09-03T23:47:16Z",
+    "ownerReferences": [
+      {
+        "apiVersion": "apps/v1",
+        "blockOwnerDeletion": true,
+        "controller": true,
+        "kind": "ReplicaSet",
+        "name": "booking-service-9fbfb8986",
+        "uid": "853a76eb-8939-476c-9681-d78426e126f8"
+      }
+    ]
+  },
+  "spec": {
+    "nodeName": "dev-worker",
+    "restartPolicy": "Always",
+    "containers": [
+      {
+        "name": "booking-service",
+        "image": "ghcr.io/fixam4me/booking-service:sha-fb6de2bb9a4f2cd0ae057e626c92d01e30141522",
+        "resources": {
+          "limits": {
+            "cpu": "500m",
+            "memory": "512Mi"
+          },
+          "requests": {
+            "cpu": "50m",
+            "memory": "128Mi"
+          }
+        },
+        "livenessProbe": {
+          "failureThreshold": 3,
+          "httpGet": {
+            "path": "/health",
+            "port": 3003,
+            "scheme": "HTTP"
+          },
+          "initialDelaySeconds": 25,
+          "periodSeconds": 20,
+          "successThreshold": 1,
+          "timeoutSeconds": 1
+        },
+        "readinessProbe": {
+          "failureThreshold": 3,
+          "httpGet": {
+            "path": "/health/ready",
+            "port": 3003,
+            "scheme": "HTTP"
+          },
+          "initialDelaySeconds": 5,
+          "periodSeconds": 10,
+          "successThreshold": 1,
+          "timeoutSeconds": 1
+        }
+      }
+    ]
+  },
+  "status": {
+    "allocatedResources": {
+      "cpu": "50m",
+      "memory": "128Mi"
+    },
+    "conditions": [
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-09-16T00:25:49Z",
+        "observedGeneration": 1,
+        "status": "True",
+        "type": "PodReadyToStartContainers"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-09-03T23:48:08Z",
+        "observedGeneration": 1,
+        "status": "True",
+        "type": "Initialized"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-09-16T08:01:25Z",
+        "observedGeneration": 1,
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-09-16T08:01:25Z",
+        "observedGeneration": 1,
+        "status": "True",
+        "type": "ContainersReady"
+      },
+      {
+        "lastProbeTime": null,
+        "lastTransitionTime": "2026-09-03T23:47:16Z",
+        "observedGeneration": 1,
+        "status": "True",
+        "type": "PodScheduled"
+      }
+    ],
+    "containerStatuses": [
+      {
+        "allocatedResources": {
+          "cpu": "50m",
+          "memory": "128Mi"
+        },
+        "containerID": "containerd://9a300cd5f4a96227bdbbb6e988a8026225af66e6dc0b6f389eaa9c9bf3f75c27",
+        "image": "ghcr.io/fixam4me/booking-service:sha-fb6de2bb9a4f2cd0ae057e626c92d01e30141522",
+        "imageID": "ghcr.io/fixam4me/booking-service@sha256:497896ac9460368552063ccb216da622a2eab21baafa73957284e23a3bef1261",
+        "lastState": {
+          "terminated": {
+            "containerID": "containerd://6dd4c5ca1da44f881c5a186daa4bb5b0fd367cfb1908ca5bd4995eeb3b293aac",
+            "exitCode": 1,
+            "finishedAt": "2026-09-16T08:00:53Z",
+            "reason": "Error",
+            "startedAt": "2026-09-16T07:46:46Z"
+          }
+        },
+        "name": "booking-service",
+        "ready": true,
+        "resources": {
+          "limits": {
+            "cpu": "500m",
+            "memory": "512Mi"
+          },
+          "requests": {
+            "cpu": "50m",
+            "memory": "128Mi"
+          }
+        },
+        "restartCount": 51,
+        "started": true,
+        "state": {
+          "running": {
+            "startedAt": "2026-09-16T08:00:54Z"
+          }
+        },
+        "user": {
+          "linux": {
+            "gid": 1000,
+            "supplementalGroups": [
+              1000
+            ],
+            "uid": 1000
+          }
+        },
+        "volumeMounts": [
+          {
+            "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+            "name": "kube-api-access-qmnkv",
+            "readOnly": true,
+            "recursiveReadOnly": "Disabled"
+          }
+        ]
+      }
+    ],
+    "hostIP": "172.18.0.9",
+    "hostIPs": [
+      {
+        "ip": "172.18.0.9"
+      }
+    ],
+    "initContainerStatuses": [
+      {
+        "containerID": "containerd://daa8e878841300f3fe83c05b4a8622e7853f954e7de2e2af26489d7205cbdc07",
+        "image": "ghcr.io/fixam4me/booking-service:sha-fb6de2bb9a4f2cd0ae057e626c92d01e30141522",
+        "imageID": "ghcr.io/fixam4me/booking-service@sha256:497896ac9460368552063ccb216da622a2eab21baafa73957284e23a3bef1261",
+        "lastState": {
+          "terminated": {
+            "containerID": "containerd://b47ac66e90bd40991303171b5dba40aa4079a352c49868e9483dfc1fc3c7fb8b",
+            "exitCode": 1,
+            "finishedAt": "2026-09-16T00:26:04Z",
+            "reason": "Error",
+            "startedAt": "2026-09-16T00:25:54Z"
+          }
+        },
+        "name": "migrate",
+        "ready": true,
+        "resources": {},
+        "restartCount": 24,
+        "started": false,
+        "state": {
+          "terminated": {
+            "containerID": "containerd://daa8e878841300f3fe83c05b4a8622e7853f954e7de2e2af26489d7205cbdc07",
+            "exitCode": 0,
+            "finishedAt": "2026-09-16T00:26:18Z",
+            "reason": "Completed",
+            "startedAt": "2026-09-16T00:26:16Z"
+          }
+        },
+        "user": {
+          "linux": {
+            "gid": 1000,
+            "supplementalGroups": [
+              1000
+            ],
+            "uid": 1000
+          }
+        },
+        "volumeMounts": [
+          {
+            "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+            "name": "kube-api-access-qmnkv",
+            "readOnly": true,
+            "recursiveReadOnly": "Disabled"
+          }
+        ]
+      }
+    ],
+    "observedGeneration": 1,
+    "phase": "Running",
+    "podIP": "10.244.1.20",
+    "podIPs": [
+      {
+        "ip": "10.244.1.20"
+      }
+    ],
+    "qosClass": "Burstable",
+    "resources": {
+      "limits": {
+        "cpu": "500m",
+        "memory": "512Mi"
+      },
+      "requests": {
+        "cpu": "28m",
+        "memory": "128Mi"
+      }
+    },
+    "startTime": "2026-09-03T23:47:16Z"
+  }
+}

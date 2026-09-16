@@ -1,0 +1,89 @@
+/**
+ * booking-service — the job lifecycle and its state machine.
+ *
+ * ADR-001: a booking is created in PENDING_PAYMENT and returns its id and the
+ * server-computed fee. It moves to PAID only when payment.completed arrives, and
+ * booking.created is published on that transition — so dispatch can never run for
+ * an unpaid job.
+ */
+import express from 'express';
+import { PrismaClient } from '@prisma/client';
+import { z } from 'zod';
+import { CANCELLABLE, EventBus, authenticate, canTransition, cancellationIncursFee, clampAtZero, conflict, created, errorHandler, forbidden, installBigIntJson, isBookingStatus, logger, mountHealth, notFound, ok, paginate, requestContext, requireInternal, unprocessable, wrap, } from '@fixam4me/shared';
+import { bookingReference, callFeeFor, cancellationFee, paymentTtlMinutes } from './fees.js';
+import { assertClientMayBook } from './identity.js';
+installBigIntJson();
+const PORT = Number(process.env.PORT ?? 3003);
+const prisma = new PrismaClient();
+const bus = new EventBus(process.env.RABBITMQ_URL, 'booking-service');
+const app = express();
+app.use(express.json({ limit: '2mb' }));
+app.use(requestContext);
+mountHealth(app, 'booking-service', async () => {
+    await prisma.$queryRaw `SELECT 1`;
+    return true;
+});
+/** Records a transition and its log entry inside one transaction. */
+async function transition(tx, bookingId, from, to, note, extra = {}) {
+    if (!canTransition(from, to)) {
+        throw unprocessable(`Cannot move a booking from ${from} to ${to}`, 'INVALID_TRANSITION');
+    }
+    const booking = await tx.booking.update({ where: { id: bookingId }, data: { status: to, ...extra } });
+    await tx.bookingStatusLog.create({ data: { bookingId, status: to, note } });
+    return booking;
+}
+// --------------------------------------------------------------- creation
+const createSchema = z.object({
+    serviceType: z.string().min(2),
+    serviceIssue: z.string().optional(),
+    description: z.string().optional(),
+    photoUrls: z.array(z.string()).default([]),
+    jobType: z.enum(['STANDARD', 'EMERGENCY', 'SCHEDULED']).default('STANDARD'),
+    scheduledAt: z.string().optional(),
+    locationLat: z.number(),
+    locationLng: z.number(),
+    locationAddress: z.string().optional(),
+            serviceType: updated.serviceType, jobType: updated.jobType,
+            locationLat: updated.locationLat, locationLng: updated.locationLng,
+            callFee: updated.callFee.toString(), attempt: 1,
+        }, updated.reference);
+        logger.info('booking paid, dispatch may begin', { bookingId: updated.id, reference: updated.reference });
+    }, alreadyProcessed);
+}
+/**
+ * ADR-002: unpaid bookings expire so they cannot accumulate forever or hold a promo
+ * reservation. Retained as CANCELLED so abandoned checkout stays measurable.
+ */
+async function expireUnpaidBookings() {
+    const cutoff = new Date(Date.now() - paymentTtlMinutes() * 60_000);
+    const stale = await prisma.booking.findMany({
+        where: { status: 'PENDING_PAYMENT', createdAt: { lt: cutoff } }, take: 100,
+    });
+    for (const booking of stale) {
+        try {
+            await prisma.$transaction(async (tx) => {
+                await transition(tx, booking.id, 'PENDING_PAYMENT', 'CANCELLED', 'Payment not received in time', { cancelReason: 'PAYMENT_NOT_RECEIVED', cancelledAt: new Date() });
+                if (booking.promoCode) {
+                    await tx.promoCode.updateMany({
+                        where: { code: booking.promoCode, usedCount: { gt: 0 } }, data: { usedCount: { decrement: 1 } },
+                    });
+                }
+            });
+            logger.info('expired unpaid booking', { bookingId: booking.id, reference: booking.reference });
+        }
+        catch (e) {
+            logger.error('failed to expire booking', e, { bookingId: booking.id });
+        }
+    }
+}
+async function main() {
+    await bus.connect();
+    await startConsumers();
+    setInterval(() => { void expireUnpaidBookings(); }, 60_000);
+    app.listen(PORT, () => logger.info('booking-service listening', { port: PORT }));
+}
+main().catch((e) => { logger.error('startup failed', e); process.exit(1); });
+for (const sig of ['SIGTERM', 'SIGINT']) {
+    process.on(sig, async () => { await bus.close(); await prisma.$disconnect(); process.exit(0); });
+}
+//# sourceMappingURL=index.js.map

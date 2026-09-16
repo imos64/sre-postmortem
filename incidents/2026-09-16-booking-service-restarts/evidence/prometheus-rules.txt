@@ -1,0 +1,22 @@
+[
+  {
+    "state": "inactive",
+    "name": "KubernetesPodRestartingTooOften",
+    "query": "increase(kube_pod_container_status_restarts_total[15m]) > 3",
+    "duration": 300,
+    "keepFiringFor": 0,
+    "labels": {
+      "severity": "warning",
+      "team": "platform"
+    },
+    "annotations": {
+      "description": "Container {{ $labels.container }} restarted more than three times during the last fifteen minutes.",
+      "summary": "Pod {{ $labels.namespace }}/{{ $labels.pod }} is restarting frequently"
+    },
+    "alerts": [],
+    "health": "ok",
+    "evaluationTime": 0.001956539,
+    "lastEvaluation": "2026-09-16T08:22:46.28235936Z",
+    "type": "alerting"
+  }
+]

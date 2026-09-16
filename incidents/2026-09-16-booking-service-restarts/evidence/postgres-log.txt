@@ -1,0 +1,54 @@
+2026-09-16T00:25:53.384600010Z PostgreSQL Database directory appears to contain a database; Skipping initialization
+2026-09-16T00:25:53.405883127Z 2026-09-16 00:25:53.405 UTC [1] LOG:  starting PostgreSQL 16.15 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-09-16T00:25:53.406149269Z 2026-09-16 00:25:53.405 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-09-16T00:25:53.406157727Z 2026-09-16 00:25:53.405 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-09-16T00:25:53.411450576Z 2026-09-16 00:25:53.411 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-09-16T00:25:53.433308590Z 2026-09-16 00:25:53.433 UTC [34] LOG:  database system was interrupted; last known up at 2026-09-14 20:28:41 UTC
+2026-09-16T00:25:58.892776132Z 2026-09-16 00:25:58.892 UTC [34] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-09-16T00:25:58.920377179Z 2026-09-16 00:25:58.909 UTC [34] LOG:  redo starts at 0/3B16670
+2026-09-16T00:25:58.920401421Z 2026-09-16 00:25:58.909 UTC [34] LOG:  invalid record length at 0/3B16758: expected at least 24, got 0
+2026-09-16T00:25:58.920404186Z 2026-09-16 00:25:58.909 UTC [34] LOG:  redo done at 0/3B16720 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-09-16T00:25:59.072215047Z 2026-09-16 00:25:59.071 UTC [32] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-09-16T00:25:59.133749446Z 2026-09-16 00:25:59.133 UTC [32] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.023 s, sync=0.003 s, total=0.073 s; sync files=2, longest=0.003 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=0/3B16758, redo lsn=0/3B16758
+2026-09-16T00:25:59.150553746Z 2026-09-16 00:25:59.149 UTC [1] LOG:  database system is ready to accept connections
+2026-09-16T00:26:14.527886665Z 2026-09-16 00:26:14.526 UTC [61] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T00:26:17.073579272Z 2026-09-16 00:26:17.069 UTC [70] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T00:26:23.500259440Z 2026-09-16 00:26:23.500 UTC [87] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T01:23:43.617188407Z 2026-09-16 01:23:43.616 UTC [6880] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T01:23:53.600522915Z 2026-09-16 01:23:53.600 UTC [7173] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T01:29:09.728528464Z 2026-09-16 01:29:09.728 UTC [7756] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T01:29:27.904433028Z 2026-09-16 01:29:27.904 UTC [7296] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T02:30:19.139885634Z 2026-09-16 02:30:19.139 UTC [14627] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T03:00:34.882714769Z 2026-09-16 03:00:34.882 UTC [18561] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T03:07:48.091733863Z 2026-09-16 03:07:48.091 UTC [19803] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T03:12:19.248680005Z 2026-09-16 03:12:19.248 UTC [20725] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T03:16:52.230519481Z 2026-09-16 03:16:52.230 UTC [20917] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T03:29:47.722184045Z 2026-09-16 03:29:47.721 UTC [21522] LOG:  could not send data to client: Connection reset by peer
+2026-09-16T03:29:47.722246617Z 2026-09-16 03:29:47.722 UTC [21522] FATAL:  connection to client lost
+2026-09-16T03:35:27.521151653Z 2026-09-16 03:35:27.520 UTC [23261] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T03:41:42.280561495Z 2026-09-16 03:41:42.280 UTC [9335] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T03:49:19.965676938Z 2026-09-16 03:49:19.965 UTC [24424] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T04:04:36.957375691Z 2026-09-16 04:04:36.957 UTC [26740] LOG:  could not send data to client: Connection reset by peer
+2026-09-16T04:04:36.957441551Z 2026-09-16 04:04:36.957 UTC [26740] FATAL:  connection to client lost
+2026-09-16T04:13:21.498834963Z 2026-09-16 04:13:21.498 UTC [28351] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T04:25:53.966216988Z 2026-09-16 04:25:53.966 UTC [29538] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T04:36:05.126504409Z 2026-09-16 04:36:05.126 UTC [16045] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T04:38:34.801451144Z 2026-09-16 04:38:34.801 UTC [16495] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T04:42:08.063813247Z 2026-09-16 04:42:08.063 UTC [16529] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T04:45:04.398267320Z 2026-09-16 04:45:04.397 UTC [31799] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T05:00:26.394827563Z 2026-09-16 05:00:26.394 UTC [33812] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T05:18:50.271682348Z 2026-09-16 05:18:50.271 UTC [35711] LOG:  could not send data to client: Connection reset by peer
+2026-09-16T05:18:50.271731036Z 2026-09-16 05:18:50.271 UTC [35711] FATAL:  connection to client lost
+2026-09-16T05:22:12.945171826Z 2026-09-16 05:22:12.944 UTC [36432] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T05:27:42.381872452Z 2026-09-16 05:27:42.381 UTC [37302] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T05:42:07.364244297Z 2026-09-16 05:42:07.363 UTC [38335] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T05:52:31.129241100Z 2026-09-16 05:52:31.128 UTC [40096] LOG:  could not send data to client: Connection reset by peer
+2026-09-16T05:52:31.129431368Z 2026-09-16 05:52:31.128 UTC [40096] FATAL:  connection to client lost
+2026-09-16T06:31:22.181190469Z 2026-09-16 06:31:22.180 UTC [45170] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T07:14:38.027542403Z 2026-09-16 07:14:38.027 UTC [50719] LOG:  could not send data to client: Connection reset by peer
+2026-09-16T07:14:38.027656488Z 2026-09-16 07:14:38.027 UTC [50719] FATAL:  connection to client lost
+2026-09-16T07:26:07.889720278Z 2026-09-16 07:26:07.889 UTC [52027] LOG:  could not send data to client: Connection reset by peer
+2026-09-16T07:26:07.889804644Z 2026-09-16 07:26:07.889 UTC [52027] FATAL:  connection to client lost
+2026-09-16T07:30:18.594048588Z 2026-09-16 07:30:18.593 UTC [37914] LOG:  could not receive data from client: Connection reset by peer
+2026-09-16T08:03:59.753384061Z 2026-09-16 08:03:59.753 UTC [56700] LOG:  could not send data to client: Connection reset by peer
+2026-09-16T08:03:59.753420765Z 2026-09-16 08:03:59.753 UTC [56700] FATAL:  connection to client lost

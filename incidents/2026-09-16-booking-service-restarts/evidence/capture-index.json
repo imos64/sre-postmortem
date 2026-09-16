@@ -1,0 +1,232 @@
+[
+  {
+    "file": "pod.txt",
+    "startedAt": "2026-09-16T08:22:56.693469+00:00",
+    "finishedAt": "2026-09-16T08:22:56.869553+00:00",
+    "command": [
+      "kubectl",
+      "--context",
+      "kind-dev",
+      "--request-timeout=20s",
+      "-n",
+      "fixam4me",
+      "get",
+      "pod",
+      "booking-service-9fbfb8986-zbqdf",
+      "-o",
+      "json"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "booking-previous.txt",
+    "startedAt": "2026-09-16T08:22:56.694002+00:00",
+    "finishedAt": "2026-09-16T08:22:56.939194+00:00",
+    "command": [
+      "kubectl",
+      "--context",
+      "kind-dev",
+      "--request-timeout=20s",
+      "-n",
+      "fixam4me",
+      "logs",
+      "booking-service-9fbfb8986-zbqdf",
+      "-c",
+      "booking-service",
+      "--previous",
+      "--timestamps",
+      "--tail=2000"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "booking-current.txt",
+    "startedAt": "2026-09-16T08:22:56.695735+00:00",
+    "finishedAt": "2026-09-16T08:22:56.885263+00:00",
+    "command": [
+      "kubectl",
+      "--context",
+      "kind-dev",
+      "--request-timeout=20s",
+      "-n",
+      "fixam4me",
+      "logs",
+      "booking-service-9fbfb8986-zbqdf",
+      "-c",
+      "booking-service",
+      "--timestamps",
+      "--tail=3000"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "events.txt",
+    "startedAt": "2026-09-16T08:22:56.696477+00:00",
+    "finishedAt": "2026-09-16T08:22:56.873677+00:00",
+    "command": [
+      "kubectl",
+      "--context",
+      "kind-dev",
+      "--request-timeout=20s",
+      "-n",
+      "fixam4me",
+      "get",
+      "events",
+      "-o",
+      "json"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "deployment.txt",
+    "startedAt": "2026-09-16T08:22:56.696909+00:00",
+    "finishedAt": "2026-09-16T08:22:56.867601+00:00",
+    "command": [
+      "kubectl",
+      "--context",
+      "kind-dev",
+      "--request-timeout=20s",
+      "-n",
+      "fixam4me",
+      "get",
+      "deployment",
+      "booking-service",
+      "-o",
+      "json"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "pods.txt",
+    "startedAt": "2026-09-16T08:22:56.697737+00:00",
+    "finishedAt": "2026-09-16T08:22:56.938548+00:00",
+    "command": [
+      "kubectl",
+      "--context",
+      "kind-dev",
+      "--request-timeout=20s",
+      "-n",
+      "fixam4me",
+      "get",
+      "pods",
+      "-o",
+      "json"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "services.txt",
+    "startedAt": "2026-09-16T08:22:56.867664+00:00",
+    "finishedAt": "2026-09-16T08:22:57.054448+00:00",
+    "command": [
+      "kubectl",
+      "--context",
+      "kind-dev",
+      "--request-timeout=20s",
+      "-n",
+      "fixam4me",
+      "get",
+      "svc",
+      "booking-service",
+      "postgres",
+      "-o",
+      "json"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "endpoints.txt",
+    "startedAt": "2026-09-16T08:22:56.869650+00:00",
+    "finishedAt": "2026-09-16T08:22:57.053362+00:00",
+    "command": [
+      "kubectl",
+      "--context",
+      "kind-dev",
+      "--request-timeout=20s",
+      "-n",
+      "fixam4me",
+      "get",
+      "endpointslices",
+      "-o",
+      "json"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "postgres-log.txt",
+    "startedAt": "2026-09-16T08:22:56.873719+00:00",
+    "finishedAt": "2026-09-16T08:22:57.057582+00:00",
+    "command": [
+      "kubectl",
+      "--context",
+      "kind-dev",
+      "--request-timeout=20s",
+      "-n",
+      "fixam4me",
+      "logs",
+      "postgres-595f8c5c76-gh78x",
+      "--timestamps",
+      "--since=9h",
+      "--tail=5000"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "nodes.txt",
+    "startedAt": "2026-09-16T08:22:56.885414+00:00",
+    "finishedAt": "2026-09-16T08:22:57.069373+00:00",
+    "command": [
+      "kubectl",
+      "--context",
+      "kind-dev",
+      "--request-timeout=20s",
+      "get",
+      "nodes",
+      "-o",
+      "json"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "prometheus-rules.txt",
+    "startedAt": "2026-09-16T08:22:56.938894+00:00",
+    "finishedAt": "2026-09-16T08:22:57.119652+00:00",
+    "command": [
+      "kubectl",
+      "--context",
+      "kind-dev",
+      "--request-timeout=20s",
+      "get",
+      "--raw",
+      "/api/v1/namespaces/monitoring/services/prometheus:9090/proxy/api/v1/rules"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "prometheus-alerts.txt",
+    "startedAt": "2026-09-16T08:22:56.939365+00:00",
+    "finishedAt": "2026-09-16T08:22:57.119841+00:00",
+    "command": [
+      "kubectl",
+      "--context",
+      "kind-dev",
+      "--request-timeout=20s",
+      "get",
+      "--raw",
+      "/api/v1/namespaces/monitoring/services/prometheus:9090/proxy/api/v1/alerts"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  }
+]

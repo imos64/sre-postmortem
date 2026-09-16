@@ -1,0 +1,51 @@
+[
+  {
+    "file": "final-pod.txt",
+    "time": "2026-09-16T08:24:37.017100+00:00",
+    "command": [
+      "kubectl",
+      "--context",
+      "kind-dev",
+      "--request-timeout=20s",
+      "-n",
+      "fixam4me",
+      "get",
+      "pod",
+      "booking-service-9fbfb8986-zbqdf",
+      "-o",
+      "jsonpath={.metadata.uid}{\"\\n\"}{.status.containerStatuses[0]}{\"\\n\"}{.status.conditions}"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "health-ready.txt",
+    "time": "2026-09-16T08:24:37.175686+00:00",
+    "command": [
+      "kubectl",
+      "--context",
+      "kind-dev",
+      "--request-timeout=20s",
+      "get",
+      "--raw",
+      "/api/v1/namespaces/fixam4me/services/booking-service:3003/proxy/health/ready"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "health-live.txt",
+    "time": "2026-09-16T08:24:37.330959+00:00",
+    "command": [
+      "kubectl",
+      "--context",
+      "kind-dev",
+      "--request-timeout=20s",
+      "get",
+      "--raw",
+      "/api/v1/namespaces/fixam4me/services/booking-service:3003/proxy/health"
+    ],
+    "returncode": 0,
+    "stderr": ""
+  }
+]

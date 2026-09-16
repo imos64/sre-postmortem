@@ -1,0 +1,105 @@
+{
+  "alert_sample_intervals": [
+    {
+      "state": "firing",
+      "firstSample": "2026-09-16T03:17:45+00:00",
+      "lastSample": "2026-09-16T03:27:15+00:00"
+    },
+    {
+      "state": "firing",
+      "firstSample": "2026-09-16T05:28:15+00:00",
+      "lastSample": "2026-09-16T05:37:45+00:00"
+    },
+    {
+      "state": "firing",
+      "firstSample": "2026-09-16T06:45:00+00:00",
+      "lastSample": "2026-09-16T06:53:15+00:00"
+    },
+    {
+      "state": "firing",
+      "firstSample": "2026-09-16T07:18:00+00:00",
+      "lastSample": "2026-09-16T07:18:00+00:00"
+    },
+    {
+      "state": "firing",
+      "firstSample": "2026-09-16T07:37:45+00:00",
+      "lastSample": "2026-09-16T07:40:15+00:00"
+    },
+    {
+      "state": "firing",
+      "firstSample": "2026-09-16T07:48:30+00:00",
+      "lastSample": "2026-09-16T07:58:00+00:00"
+    },
+    {
+      "state": "pending",
+      "firstSample": "2026-09-16T03:11:15+00:00",
+      "lastSample": "2026-09-16T03:12:15+00:00"
+    },
+    {
+      "state": "pending",
+      "firstSample": "2026-09-16T03:12:45+00:00",
+      "lastSample": "2026-09-16T03:17:30+00:00"
+    },
+    {
+      "state": "pending",
+      "firstSample": "2026-09-16T03:35:30+00:00",
+      "lastSample": "2026-09-16T03:35:45+00:00"
+    },
+    {
+      "state": "pending",
+      "firstSample": "2026-09-16T03:46:45+00:00",
+      "lastSample": "2026-09-16T03:48:45+00:00"
+    },
+    {
+      "state": "pending",
+      "firstSample": "2026-09-16T04:13:45+00:00",
+      "lastSample": "2026-09-16T04:16:15+00:00"
+    },
+    {
+      "state": "pending",
+      "firstSample": "2026-09-16T04:23:45+00:00",
+      "lastSample": "2026-09-16T04:25:45+00:00"
+    },
+    {
+      "state": "pending",
+      "firstSample": "2026-09-16T05:23:15+00:00",
+      "lastSample": "2026-09-16T05:28:00+00:00"
+    },
+    {
+      "state": "pending",
+      "firstSample": "2026-09-16T05:40:45+00:00",
+      "lastSample": "2026-09-16T05:43:00+00:00"
+    },
+    {
+      "state": "pending",
+      "firstSample": "2026-09-16T06:40:00+00:00",
+      "lastSample": "2026-09-16T06:44:45+00:00"
+    },
+    {
+      "state": "pending",
+      "firstSample": "2026-09-16T07:13:00+00:00",
+      "lastSample": "2026-09-16T07:17:45+00:00"
+    },
+    {
+      "state": "pending",
+      "firstSample": "2026-09-16T07:32:45+00:00",
+      "lastSample": "2026-09-16T07:37:30+00:00"
+    },
+    {
+      "state": "pending",
+      "firstSample": "2026-09-16T07:43:30+00:00",
+      "lastSample": "2026-09-16T07:48:15+00:00"
+    }
+  ],
+  "readiness_zero_samples": 196,
+  "readiness_total_samples": 2001,
+  "query_step_seconds": 15,
+  "sample_gaps": [
+    {
+      "after": "2026-09-16T00:23:15+00:00",
+      "before": "2026-09-16T00:26:30+00:00",
+      "seconds": 195
+    }
+  ],
+  "caveat": "Range-query samples are evaluated values; lookback and scrape gaps limit exact transition times. Zero sample count times step is an estimate, not request availability."
+}

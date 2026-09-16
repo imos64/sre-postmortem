@@ -1,0 +1,86 @@
+[
+  {
+    "file": "restart-history.json",
+    "params": {
+      "query": "kube_pod_container_status_restarts_total{namespace=\"fixam4me\",pod=\"booking-service-9fbfb8986-zbqdf\",container=\"booking-service\"}",
+      "start": "2026-09-16T00:00:00Z",
+      "end": "2026-09-16T08:23:00Z",
+      "step": "15s"
+    },
+    "capturedAt": "2026-09-16T08:23:41.141114+00:00",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "restart-increase.json",
+    "params": {
+      "query": "increase(kube_pod_container_status_restarts_total{namespace=\"fixam4me\",pod=\"booking-service-9fbfb8986-zbqdf\",container=\"booking-service\"}[15m])",
+      "start": "2026-09-16T00:00:00Z",
+      "end": "2026-09-16T08:23:00Z",
+      "step": "15s"
+    },
+    "capturedAt": "2026-09-16T08:23:41.139347+00:00",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "alert-history.json",
+    "params": {
+      "query": "ALERTS{alertname=\"KubernetesPodRestartingTooOften\",namespace=\"fixam4me\",pod=\"booking-service-9fbfb8986-zbqdf\"}",
+      "start": "2026-09-16T00:00:00Z",
+      "end": "2026-09-16T08:23:00Z",
+      "step": "15s"
+    },
+    "capturedAt": "2026-09-16T08:23:41.144237+00:00",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "ready-history.json",
+    "params": {
+      "query": "kube_pod_status_ready{namespace=\"fixam4me\",pod=\"booking-service-9fbfb8986-zbqdf\",condition=\"true\"}",
+      "start": "2026-09-16T00:00:00Z",
+      "end": "2026-09-16T08:23:00Z",
+      "step": "15s"
+    },
+    "capturedAt": "2026-09-16T08:23:41.142682+00:00",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "postgres-ready-history.json",
+    "params": {
+      "query": "kube_pod_status_ready{namespace=\"fixam4me\",pod=~\"postgres-.*\",condition=\"true\"}",
+      "start": "2026-09-16T00:00:00Z",
+      "end": "2026-09-16T08:23:00Z",
+      "step": "15s"
+    },
+    "capturedAt": "2026-09-16T08:23:41.297934+00:00",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "postgres-restart-history.json",
+    "params": {
+      "query": "kube_pod_container_status_restarts_total{namespace=\"fixam4me\",pod=~\"postgres-.*\"}",
+      "start": "2026-09-16T00:00:00Z",
+      "end": "2026-09-16T08:23:00Z",
+      "step": "15s"
+    },
+    "capturedAt": "2026-09-16T08:23:41.276232+00:00",
+    "returncode": 0,
+    "stderr": ""
+  },
+  {
+    "file": "node-ready-history.json",
+    "params": {
+      "query": "kube_node_status_condition{node=~\"dev-worker.*\",condition=\"Ready\",status=\"true\"}",
+      "start": "2026-09-16T00:00:00Z",
+      "end": "2026-09-16T08:23:00Z",
+      "step": "15s"
+    },
+    "capturedAt": "2026-09-16T08:23:41.280034+00:00",
+    "returncode": 0,
+    "stderr": ""
+  }
+]

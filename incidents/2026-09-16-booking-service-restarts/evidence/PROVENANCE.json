@@ -1,0 +1,132 @@
+{
+  "incident": "BOOKING-2026-09-16",
+  "historical_capture_utc": "2026-09-16T08:22:56Z through 2026-09-16T08:24:37Z",
+  "private_source_manifest_sha256": "59f3f037a1870c978b58e2085b13baae0d2482bfbb14f046d88cfbbbaf9f76f3",
+  "files": [
+    {
+      "file": "restart-history.json",
+      "source": "private incident capture/evidence/restart-history.json",
+      "transformation": "Unchanged retained capture output"
+    },
+    {
+      "file": "restart-increase.json",
+      "source": "private incident capture/evidence/restart-increase.json",
+      "transformation": "Unchanged retained capture output"
+    },
+    {
+      "file": "alert-history.json",
+      "source": "private incident capture/evidence/alert-history.json",
+      "transformation": "Unchanged retained capture output"
+    },
+    {
+      "file": "ready-history.json",
+      "source": "private incident capture/evidence/ready-history.json",
+      "transformation": "Unchanged retained capture output"
+    },
+    {
+      "file": "postgres-ready-history.json",
+      "source": "private incident capture/evidence/postgres-ready-history.json",
+      "transformation": "Unchanged retained capture output"
+    },
+    {
+      "file": "postgres-restart-history.json",
+      "source": "private incident capture/evidence/postgres-restart-history.json",
+      "transformation": "Unchanged retained capture output"
+    },
+    {
+      "file": "node-ready-history.json",
+      "source": "private incident capture/evidence/node-ready-history.json",
+      "transformation": "Unchanged retained capture output"
+    },
+    {
+      "file": "history-summary.json",
+      "source": "private incident capture/evidence/history-summary.json",
+      "transformation": "Unchanged retained capture output"
+    },
+    {
+      "file": "metrics-index.json",
+      "source": "private incident capture/evidence/metrics-index.json",
+      "transformation": "Unchanged retained capture output"
+    },
+    {
+      "file": "verification-index.json",
+      "source": "private incident capture/evidence/verification-index.json",
+      "transformation": "Unchanged retained capture output"
+    },
+    {
+      "file": "health-live.txt",
+      "source": "private incident capture/evidence/health-live.txt",
+      "transformation": "Unchanged retained capture output"
+    },
+    {
+      "file": "health-ready.txt",
+      "source": "private incident capture/evidence/health-ready.txt",
+      "transformation": "Unchanged retained capture output"
+    },
+    {
+      "file": "final-pod.txt",
+      "source": "private incident capture/evidence/final-pod.txt",
+      "transformation": "Unchanged retained capture output"
+    },
+    {
+      "file": "runtime-source-excerpt.txt",
+      "source": "private incident capture/evidence/runtime-source-excerpt.txt",
+      "transformation": "Unchanged retained capture output"
+    },
+    {
+      "file": "booking-previous.txt",
+      "source": "private incident capture/evidence/booking-previous.txt",
+      "transformation": "Removed lines >=2500 characters (bundled library dump) and empty timestamped lines; retained URL redaction from capture; no reordering"
+    },
+    {
+      "file": "booking-current.txt",
+      "source": "private incident capture/evidence/booking-current.txt",
+      "transformation": "Removed lines >=2500 characters (bundled library dump) and empty timestamped lines; retained URL redaction from capture; no reordering"
+    },
+    {
+      "file": "postgres-log.txt",
+      "source": "private incident capture/evidence/postgres-log.txt",
+      "transformation": "Removed lines >=2500 characters (bundled library dump) and empty timestamped lines; retained URL redaction from capture; no reordering"
+    },
+    {
+      "file": "pod.txt",
+      "source": "private incident capture/evidence/pod.txt",
+      "transformation": "Selected identity, probes, resources, restart policy and status; omitted environment, annotations, credentials references and mounts from spec"
+    },
+    {
+      "file": "deployment.txt",
+      "source": "private incident capture/evidence/deployment.txt",
+      "transformation": "Selected replica configuration and status only"
+    },
+    {
+      "file": "workload-inventory.json",
+      "source": "private incident capture/evidence/pods.txt",
+      "transformation": "Selected workload names, nodes and container status; omitted configuration"
+    },
+    {
+      "file": "events.txt",
+      "source": "private incident capture/evidence/events.txt",
+      "transformation": "Selected namespace event identity, reason, message, count and timestamps"
+    },
+    {
+      "file": "prometheus-rules.txt",
+      "source": "private incident capture/evidence/prometheus-rules.txt",
+      "transformation": "Selected incident rule only; omitted unrelated rules"
+    },
+    {
+      "file": "capture-index.json",
+      "source": "private incident capture/evidence/capture-index.json",
+      "transformation": "Unchanged capture metadata; some raw outputs intentionally excluded from public package"
+    },
+    {
+      "file": "ingress-routes.json",
+      "source": "Live Kubernetes API 2026-09-16T08:33:00.309680+00:00",
+      "transformation": "Selected ingress names and routing specs only; later architecture inspection, not historic outage health"
+    },
+    {
+      "file": "gateway-routes.txt",
+      "source": "Live read-only runtime code inspection 2026-09-16T08:33:00.509920+00:00",
+      "transformation": "Only target variable names and routing registrations; no environment values"
+    }
+  ]
+}

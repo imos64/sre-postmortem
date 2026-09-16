@@ -1,0 +1,26 @@
+const TARGETS = {
+    auth: process.env.AUTH_SERVICE_URL,
+    user: process.env.USER_SERVICE_URL,
+    booking: process.env.BOOKING_SERVICE_URL,
+    payment: process.env.PAYMENT_SERVICE_URL,
+    notification: process.env.NOTIFICATION_SERVICE_URL,
+    technician: process.env.TECHNICIAN_SERVICE_URL,
+    warranty: process.env.WARRANTY_SERVICE_URL,
+    admin: process.env.ADMIN_SERVICE_URL,
+};
+const app = express();
+app.use('/v1/auth/me', requireJwt, apiLim, proxy(TARGETS.auth));
+app.use('/v1/auth/logout', refreshLim, proxy(TARGETS.auth));
+// Remaining auth routes (including the local-only dev helper) keep the strict limit.
+app.use('/v1/auth', authLim, proxy(TARGETS.auth));
+// Webhook: streamed through untouched so the raw body stays byte-identical for HMAC.
+app.use('/v1/webhooks/paystack', proxy(TARGETS.payment));
+// Protected
+app.use('/v1/users', requireJwt, apiLim, proxy(TARGETS.user));
+app.use('/v1/bookings', requireJwt, apiLim, proxy(TARGETS.booking));
+app.use('/v1/promos', requireJwt, apiLim, proxy(TARGETS.booking));
+app.use('/v1/payments', requireJwt, apiLim, proxy(TARGETS.payment));
+app.use('/v1/notifications', requireJwt, apiLim, proxy(TARGETS.notification));
+app.use('/v1/technicians', requireJwt, apiLim, proxy(TARGETS.technician));
+app.use('/v1/warranties', requireJwt, apiLim, proxy(TARGETS.warranty));
+app.use('/v1/admin', requireJwt, adminLim, proxy(TARGETS.admin));

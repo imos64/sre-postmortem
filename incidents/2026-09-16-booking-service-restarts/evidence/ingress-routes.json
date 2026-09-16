@@ -1,0 +1,365 @@
+[
+  {
+    "name": "admin-dashboard",
+    "spec": {
+      "ingressClassName": "nginx",
+      "rules": [
+        {
+          "host": "localhost",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "admin-dashboard",
+                    "port": {
+                      "number": 80
+                    }
+                  }
+                },
+                "path": "/admin",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        },
+        {
+          "host": "admin.localhost",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "api-gateway",
+                    "port": {
+                      "number": 3000
+                    }
+                  }
+                },
+                "path": "/v1",
+                "pathType": "Prefix"
+              },
+              {
+                "backend": {
+                  "service": {
+                    "name": "admin-dashboard",
+                    "port": {
+                      "number": 80
+                    }
+                  }
+                },
+                "path": "/admin",
+                "pathType": "Prefix"
+              },
+              {
+                "backend": {
+                  "service": {
+                    "name": "admin-dashboard",
+                    "port": {
+                      "number": 80
+                    }
+                  }
+                },
+                "path": "/",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "api-gateway",
+    "spec": {
+      "ingressClassName": "nginx",
+      "rules": [
+        {
+          "host": "localhost",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "api-gateway",
+                    "port": {
+                      "number": 3000
+                    }
+                  }
+                },
+                "path": "/v1",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        },
+        {
+          "host": "api.localhost",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "api-gateway",
+                    "port": {
+                      "number": 3000
+                    }
+                  }
+                },
+                "path": "/",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "client-pwa",
+    "spec": {
+      "ingressClassName": "nginx",
+      "rules": [
+        {
+          "host": "client.localhost",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "api-gateway",
+                    "port": {
+                      "number": 3000
+                    }
+                  }
+                },
+                "path": "/v1",
+                "pathType": "Prefix"
+              },
+              {
+                "backend": {
+                  "service": {
+                    "name": "client-pwa",
+                    "port": {
+                      "number": 80
+                    }
+                  }
+                },
+                "path": "/",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        },
+        {
+          "host": "localhost",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "client-pwa",
+                    "port": {
+                      "number": 80
+                    }
+                  }
+                },
+                "path": "/client",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "paystack-mock",
+    "spec": {
+      "ingressClassName": "nginx",
+      "rules": [
+        {
+          "host": "localhost",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "paystack-mock",
+                    "port": {
+                      "number": 3100
+                    }
+                  }
+                },
+                "path": "/pay(/|$)(.*)",
+                "pathType": "ImplementationSpecific"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "realtime-service",
+    "spec": {
+      "ingressClassName": "nginx",
+      "rules": [
+        {
+          "host": "localhost",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "realtime-service",
+                    "port": {
+                      "number": 3009
+                    }
+                  }
+                },
+                "path": "/socket.io",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        },
+        {
+          "host": "app.localhost",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "realtime-service",
+                    "port": {
+                      "number": 3009
+                    }
+                  }
+                },
+                "path": "/socket.io",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        },
+        {
+          "host": "tech.localhost",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "realtime-service",
+                    "port": {
+                      "number": 3009
+                    }
+                  }
+                },
+                "path": "/socket.io",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "smoke",
+    "spec": {
+      "ingressClassName": "nginx",
+      "rules": [
+        {
+          "host": "localhost",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "smoke",
+                    "port": {
+                      "number": 3099
+                    }
+                  }
+                },
+                "path": "/smoke",
+                "pathType": "Prefix"
+              },
+              {
+                "backend": {
+                  "service": {
+                    "name": "smoke",
+                    "port": {
+                      "number": 3099
+                    }
+                  }
+                },
+                "path": "/health",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "technician-pwa",
+    "spec": {
+      "ingressClassName": "nginx",
+      "rules": [
+        {
+          "host": "localhost",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "technician-pwa",
+                    "port": {
+                      "number": 80
+                    }
+                  }
+                },
+                "path": "/tech",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        },
+        {
+          "host": "tech.localhost",
+          "http": {
+            "paths": [
+              {
+                "backend": {
+                  "service": {
+                    "name": "api-gateway",
+                    "port": {
+                      "number": 3000
+                    }
+                  }
+                },
+                "path": "/v1",
+                "pathType": "Prefix"
+              },
+              {
+                "backend": {
+                  "service": {
+                    "name": "technician-pwa",
+                    "port": {
+                      "number": 80
+                    }
+                  }
+                },
+                "path": "/",
+                "pathType": "Prefix"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+]
