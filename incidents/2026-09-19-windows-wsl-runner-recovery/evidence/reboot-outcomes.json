@@ -1,0 +1,45 @@
+{
+  "all_times": "UTC",
+  "attempts": [
+    {
+      "attempt": 1,
+      "status": "NOT_ACCEPTED",
+      "windows_boot": "2026-09-19T22:13:29.500Z",
+      "console_logon": "2026-09-19T22:13:54.488Z",
+      "boot_task_exit_code": 1,
+      "failure": "New Windows wrapper evaluated LogDirectory default before PSScriptRoot was initialized; Join-Path failed before wrapper logs or WSL keeper.",
+      "recovery_source": "Sign-in route; later explicitly authorized manual S4U verification is excluded from reboot acceptance.",
+      "additional_observation": "WSL terminated at 22:17:15 and reinitialized at 22:18:19 under the same kernel boot ID.",
+      "correction": "Resolve default in script body and test literal -File default invocation."
+    },
+    {
+      "attempt": 2,
+      "status": "AUTOMATIC_RECOVERY_PASS_BEFORE_SIGNIN_NOT_PROVEN",
+      "windows_boot": "2026-09-20T01:53:26.5000000Z",
+      "wrapper_first_utc": "2026-09-20T01:54:07.9532430Z",
+      "interactive_logon_utc": "2026-09-20T01:54:13.0484694Z",
+      "platform_ready_utc": "2026-09-20T01:56:35.236386+00:00",
+      "codex_first_read_utc": "2026-09-20T01:58:23Z",
+      "one_continuous_wrapper_and_launcher_attempt": true,
+      "services_tasks_distro_started_by_this_audit": false,
+      "user_confirmation": "I signed in before five minutes.",
+      "limitation": "Boot launcher started while signed out, but full readiness occurred after sign-in. Intermediate reboot/power-off cause unspecified."
+    },
+    {
+      "attempt": 3,
+      "status": "PASS_AUTOMATIC_PLATFORM_RECOVERY_BEFORE_SIGN_IN",
+      "windows_boot": "2026-09-20T02:58:25.5000000Z",
+      "wrapper_started": "2026-09-20T02:59:07.6192734Z",
+      "keeper_active": "2026-09-20T02:59:20.8310024Z",
+      "full_platform_ready": "2026-09-20T03:01:21.272672+00:00",
+      "automatic_proof_finished": "2026-09-20T03:04:38.994398+00:00",
+      "first_interactive_logon": "2026-09-20T03:11:24.5001400Z",
+      "single_continuous_wrapper_launch": true,
+      "signin_policy_unchanged": true,
+      "postboot_audit_started_services_tasks_or_distro": false,
+      "codex_first_postboot_read": "2026-09-20T03:13:51Z"
+    }
+  ],
+  "previous_failures_retained": true,
+  "arso_test_policy_applied": false
+}

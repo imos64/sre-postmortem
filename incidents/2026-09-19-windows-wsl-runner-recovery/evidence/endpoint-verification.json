@@ -1,0 +1,17 @@
+{
+  "capture_first_utc": "2026-09-20T03:01:19.161089+00:00",
+  "capture_last_utc": "2026-09-20T03:01:21.272297+00:00",
+  "checks": 11,
+  "passing_checks": 11,
+  "protocol_counts": {
+    "https": 10,
+    "http": 1
+  },
+  "http_status_counts": {
+    "200": 7,
+    "401": 4
+  },
+  "scope": "Ten HTTPS checks (nine Techixora routes plus the terminal API health endpoint) and one local loopback MinIO HTTP check. Expected 401 responses matched expected unauthenticated denial at these routes; this is not full authentication/authorization qualification.",
+  "correction": "Some private repair-summary prose called the aggregate 11 checks public HTTPS; this publication corrects that wording using the retained endpoint records.",
+  "urls_omitted": true
+}

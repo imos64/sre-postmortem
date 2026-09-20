@@ -1,0 +1,481 @@
+{
+  "incident": "WINDOWS-WSL-RUNNER-2026-09-19",
+  "publication_prepared_utc": "2026-09-20T03:37:10.470854+00:00",
+  "source_roots": {
+    "private-runner-recovery-incident": "Private incident directory for 2026-09-19-runner-recovery",
+    "private-techixora-startup-incident": "Private incident directory for 2026-09-19-techixora-startup",
+    "persistent-platform-coordinator": "Private persistent run-20260920T030021Z-51308 directory"
+  },
+  "policy": "Allowlist publication. Source SHA256 hashes identify complete retained evidence artifacts, not individual credential values. Raw source access remains private. Public generated digests are in SHA256SUMS.",
+  "files": [
+    {
+      "file": "original-failure.json",
+      "representation": "allowlisted summary",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/control-plane-before.json",
+          "sha256": "0d0d9bf274e1147c25277afcea773fbcea3ee160b7fe76bd426147266842055a"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/DIAGNOSIS.md",
+          "sha256": "e191b72975be40e73b974d532b985ee7180cc7b30e923998152f223582146d1a"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/before-90-platform-startup.conf",
+          "sha256": "5d53cf44dd59200859020cd134c8f78af3669ccf3f459a653b691c1fe4349da7"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/before-boot-journal.txt",
+          "sha256": "2fa40bc0268739df5eb9b4ac3ae04c9aafa5d682b5810261d3219062b2015c0a"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "before/home__imos__.local__share__imos-autostart__imos-autostart.py",
+          "sha256": "c2edca355470c3609df27d3e6d0e53beb382019d1d3de9b77ec7118869ed2e46"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "REPAIR-SUMMARY.md",
+          "sha256": "933ed52144b9a6b1b46a74521a39bf50ccf2ff5cbef85eb921355c76c3b847da"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/FINDINGS.md",
+          "sha256": "f7950f25f24cfe1f13a7cf3c40044f042432a429a525aea6601c77ca3a544945"
+        }
+      ],
+      "transformation": "Selected heartbeat timestamp, service configuration and diagnosis only; removed pairing IDs, capabilities, site metadata, queue rows, host/boot UUIDs and all credential-related hashes."
+    },
+    {
+      "file": "original-code-and-journal-excerpts.txt",
+      "representation": "selected verbatim excerpts",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/before-90-platform-startup.conf",
+          "sha256": "5d53cf44dd59200859020cd134c8f78af3669ccf3f459a653b691c1fe4349da7"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/before-benchmark-standby.py",
+          "sha256": "8846f7580ca0ad557a1d39da5f6cb3f233a820bc0cfd07da741b5b355cb114a7"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "before/home__imos__.local__share__imos-autostart__imos-autostart.py",
+          "sha256": "c2edca355470c3609df27d3e6d0e53beb382019d1d3de9b77ec7118869ed2e46"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/before-boot-journal.txt",
+          "sha256": "2fa40bc0268739df5eb9b4ac3ae04c9aafa5d682b5810261d3219062b2015c0a"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "before/home__imos__.local__share__imos-autostart__startup.log",
+          "sha256": "583e2be5bc7dc0692522e67c372c9eaac0e7e20c0be664ed7e8af41194b97297"
+        }
+      ],
+      "transformation": "Exact selected numbered line ranges with added source labels; no reordering inside excerpts. Unnecessary boot/engine identities and unrelated lines omitted. Retained original helper log includes the earlier already-active manual check and failed boot; historical Docker Desktop wording is not a claim about the detected engine."
+    },
+    {
+      "file": "installed-recovery.json",
+      "representation": "allowlisted summary",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "REPAIR-SUMMARY.md",
+          "sha256": "933ed52144b9a6b1b46a74521a39bf50ccf2ff5cbef85eb921355c76c3b847da"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/RESULTS.md",
+          "sha256": "fd8404c1aac1b524015427011fee491d043d4f52b8778165033d7fe4e17cd8ef"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/zzz-recovery.conf",
+          "sha256": "1db45200be80f7d9cc9da9ee1cd48299e8c59a87593faedfa969dd536681b103"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "supervisor/imos-platform-recovery.service",
+          "sha256": "ecc67f4dcdc76b5ced1f864d0a6abd50aa1a441bc90951452a6c97e84ed829ad"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "supervisor/connector-zzz-recovery.conf",
+          "sha256": "1689cae8ca207b3fdcaa1cec9f435d8f453e5754be7717d4ff55868097397012"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/startup-supervised.ps1",
+          "sha256": "5139156becde03f0afde3ff8ad075a8cf347feaa6eef5c4d10cd430c47c01cb9"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/FINDINGS.md",
+          "sha256": "f7950f25f24cfe1f13a7cf3c40044f042432a429a525aea6601c77ca3a544945"
+        }
+      ],
+      "transformation": "Selected architecture and non-secret policy values; no machine identifiers, environment credentials, task XML principal identity or Windows SID."
+    },
+    {
+      "file": "installed-policy-excerpts.txt",
+      "representation": "selected verbatim excerpts",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/zzz-recovery.conf",
+          "sha256": "1db45200be80f7d9cc9da9ee1cd48299e8c59a87593faedfa969dd536681b103"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "supervisor/imos-platform-recovery.service",
+          "sha256": "ecc67f4dcdc76b5ced1f864d0a6abd50aa1a441bc90951452a6c97e84ed829ad"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "supervisor/connector-zzz-recovery.conf",
+          "sha256": "1689cae8ca207b3fdcaa1cec9f435d8f453e5754be7717d4ff55868097397012"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/startup-supervised.ps1",
+          "sha256": "5139156becde03f0afde3ff8ad075a8cf347feaa6eef5c4d10cd430c47c01cb9"
+        }
+      ],
+      "transformation": "Exact selected policy/source ranges with labels. Contains only non-secret executable paths and retry/gating policy. Windows default-argument correction is included."
+    },
+    {
+      "file": "failure-injection.json",
+      "representation": "allowlisted summary",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/delayed-blocked.json",
+          "sha256": "724c16071e143319db3a424b4d75fd4b6078570ab2c8cfe7a611e1c66cf11422"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/delayed-released.json",
+          "sha256": "954861d183a7a38c6037e2c7b163bb70350e5921a24ce676034ed0358057d4ab"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/delayed-recovered-same-pid.json",
+          "sha256": "2926fb55f42244884c791447594ce2c7b6306dfbdb92f9c10a7bfce288ab2a45"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/crash-before.json",
+          "sha256": "4cf8f05c8134ed841c41afb4f37485d0dd55d947c4d21048f1f4ca031b29cab5"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/crash-recovered-new-pid.json",
+          "sha256": "0f7f8973eba9c7d6b025c4f2972ed012413eb1cd001f9c34a52138d2c6d25942"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/RESULTS.md",
+          "sha256": "fd8404c1aac1b524015427011fee491d043d4f52b8778165033d7fe4e17cd8ef"
+        }
+      ],
+      "transformation": "Selected local acceptance/retry/PID fields and report-recorded remote times. PIDs retained only to prove same-process versus automatic replacement. Omitted all pairing, provider, capability, job ID and source/config hash fields."
+    },
+    {
+      "file": "regression-tests.json",
+      "representation": "allowlisted summary",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "supervisor/tests-output.txt",
+          "sha256": "2012aed0da2fe02ce2cd633cffa6e7b142ca2006aa38caf5dc40028909158899"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/unit-tests.txt",
+          "sha256": "bb8ec413bc6f5c122e33e81cb90fb973da4f9db1b8805624f75b371db0edfa91"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "REPAIR-SUMMARY.md",
+          "sha256": "933ed52144b9a6b1b46a74521a39bf50ccf2ff5cbef85eb921355c76c3b847da"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "supervisor/isolated-imos-recovery-test-214936/result.json",
+          "sha256": "e4c8f0bfae83c6613f71436e2a219f2fdd90eed6b81743aa8218ad3a875e084a"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/mocked-verification.json",
+          "sha256": "4dfa7852f960dd230be752cd9a09d931841414a2afb31d0b65fa39ad175b7530"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/reboot-20260919T221159Z/default-file-bootstrap-verification.json",
+          "sha256": "8ae152f7d623249f030df0ef8444b2da4474c2cf059223b67bd8be9cb12a6de3"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/reboot-20260919T221159Z/FIRST-REBOOT-WINDOWS-FINDINGS.md",
+          "sha256": "eab96be803993377fd8a4227810b649a3812253566373a7450b0df954e6bcc56"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "supervisor/isolated-imos-recovery-test-214936/exercise.json",
+          "sha256": "6e68ec83b5f3a858baa531deac23693d2d574153b7d9569ad2e6b52a44bbdfd9"
+        }
+      ],
+      "transformation": "Selected counts, cases and outcomes; explicit raw-output versus narrative-summary provenance. Removed private evidence paths and boot identity. Relabeled result receipt finished separately from last exercise event because source timestamps differ by about 0.24 seconds."
+    },
+    {
+      "file": "regression-test-output.txt",
+      "representation": "verbatim outputs with source labels",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "supervisor/tests-output.txt",
+          "sha256": "2012aed0da2fe02ce2cd633cffa6e7b142ca2006aa38caf5dc40028909158899"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/unit-tests.txt",
+          "sha256": "bb8ec413bc6f5c122e33e81cb90fb973da4f9db1b8805624f75b371db0edfa91"
+        }
+      ],
+      "transformation": "Added source labels; original test output unchanged. Test names and durations only."
+    },
+    {
+      "file": "reboot-outcomes.json",
+      "representation": "allowlisted summary",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/reboot-20260919T221159Z/FIRST-REBOOT-WINDOWS-FINDINGS.md",
+          "sha256": "eab96be803993377fd8a4227810b649a3812253566373a7450b0df954e6bcc56"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "linux-first-reboot/FINDINGS.md",
+          "sha256": "1f466ffe682f5c6347ae2a919af59358cbfa00ca7b80f51248a13470ca61dfd1"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/reboot-20260920T015326Z/WINDOWS-VERDICT.json",
+          "sha256": "79815cf796a38e94564cb95ccbd21885c3e6a9fb7e321d12b2a470301e26966c"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/reboot-20260920T025825Z/WINDOWS-VERDICT.json",
+          "sha256": "50fb4fe90fd94ba16c4bcd9a658ebebd3898d798af42565da6e48292e67bec69"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "REPAIR-SUMMARY.md",
+          "sha256": "933ed52144b9a6b1b46a74521a39bf50ccf2ff5cbef85eb921355c76c3b847da"
+        }
+      ],
+      "transformation": "Selected outcomes/timestamps plus explicitly identified causal summaries. Removed boot UUIDs, Windows principal IDs, unneeded process IDs and paths. Kept failed tests as non-acceptance."
+    },
+    {
+      "file": "final-before-signin.json",
+      "representation": "allowlisted summary",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/reboot-20260920T025825Z/WINDOWS-VERDICT.json",
+          "sha256": "50fb4fe90fd94ba16c4bcd9a658ebebd3898d798af42565da6e48292e67bec69"
+        }
+      ],
+      "transformation": "Allowlisted scalar/list fields from joined Windows/Linux verdict; excluded machine UUIDs, process IDs, source digest and local paths. This is a derived verdict, not raw Windows event streams."
+    },
+    {
+      "file": "final-health.json",
+      "representation": "allowlisted summary",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "health/final-health.json",
+          "sha256": "6e50cb29f0bb80d8e2c1b67163b2b3efdcc8040e6dab6274b21172e546686950"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/reboot-20260920T025825Z/linux-latest.json",
+          "sha256": "a3e20d7ac6986193cf0fd0f4c0caa103ec5e1ac9a99c5e8ffb8392d19d93dae0"
+        }
+      ],
+      "transformation": "Selected readiness/count fields and full coordinator check descriptions; omitted engine/boot UUIDs, PIDs, private evidence paths and epoch identifiers."
+    },
+    {
+      "file": "accepted-heartbeats.json",
+      "representation": "allowlisted summary",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/third-reboot-remote-samples.json",
+          "sha256": "a793066d7b99e795c3060c87e3ab952ad16b7778051d643832fa82a4dbb82b73"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/third-reboot-preservation-and-final-local.json",
+          "sha256": "f5c2c1b0e273eb6a3810ae22c002466334a5df98027f8010bbb5928514ffb722"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/THIRD-REBOOT-RESULTS.md",
+          "sha256": "3617d0eaf3baa7911d0a5677087c332ff71e78207dc0da97c7d381e3c191596e"
+        }
+      ],
+      "transformation": "Retained observation/acceptance timestamps and stable process checks; pairing UUIDs, provider names, capabilities, source/config digests, job IDs and private routes omitted."
+    },
+    {
+      "file": "preservation.json",
+      "representation": "allowlisted summary",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "health/preservation-after-third-reboot.json",
+          "sha256": "e3e43ca939147f979d257bc15d6ed576bc9aa824c3f3853de1946219478b9a52"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/third-reboot-preservation-and-final-local.json",
+          "sha256": "f5c2c1b0e273eb6a3810ae22c002466334a5df98027f8010bbb5928514ffb722"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "runner/THIRD-REBOOT-RESULTS.md",
+          "sha256": "3617d0eaf3baa7911d0a5677087c332ff71e78207dc0da97c7d381e3c191596e"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "health/final-health.json",
+          "sha256": "6e50cb29f0bb80d8e2c1b67163b2b3efdcc8040e6dab6274b21172e546686950"
+        }
+      ],
+      "transformation": "Only counts, booleans and explicit scope retained; excludes credential hashes, all business row IDs/content, file names and identity UUIDs."
+    },
+    {
+      "file": "dashboard-confirmation.json",
+      "representation": "unchanged safe receipt",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "health/dashboard-owner-confirmation-third-reboot.json",
+          "sha256": "17a9e34250c1adcb63c35bf742a826a477b2ddebd2a81978a28666f48d67f8a4"
+        }
+      ],
+      "transformation": "Unchanged non-secret owner-attestation receipt. This is a recorded conversational confirmation, not an automated browser screenshot."
+    },
+    {
+      "file": "rollback-verification.json",
+      "representation": "allowlisted summary",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/reboot-20260920T025825Z/rollback-dry-run-verification.json",
+          "sha256": "5f1ee56bfb15394a4898bdc5563a7db8ad9e65e0329a6ef4ef7956117bca6c1b"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "ROLLBACK.md",
+          "sha256": "ff9ac4f13d1560b08cfdb2861215d65c02795610d62709015665ad17076c7861"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "FINAL-VERIFICATION.json",
+          "sha256": "b0f1ee375933d66f66a3f49339117ee6ffa4055180df67a84e3f443f0d98428d"
+        }
+      ],
+      "transformation": "Allowlisted Windows dry-run fields; summarized Linux narrative result with explicit evidence class. Removed Windows backup paths and identity-sensitive file digests."
+    },
+    {
+      "file": "endpoint-verification.json",
+      "representation": "allowlisted summary",
+      "sources": [
+        {
+          "source_root": "persistent-platform-coordinator",
+          "relative_path": "public.json",
+          "sha256": "e380b0ec2e9562074f270cf5d4d0dc636d3939278f0efb77d51e0556e3d33c02"
+        }
+      ],
+      "transformation": "Derived protocol/status counts and capture bounds from retained endpoint records; no raw URLs, private hostnames or response bodies published."
+    },
+    {
+      "file": "related-startup-failures.json",
+      "representation": "allowlisted summary",
+      "sources": [
+        {
+          "source_root": "private-techixora-startup-incident",
+          "relative_path": "REPORT.md",
+          "sha256": "31053e5a02adc15446e052a0463a6eafc8754768536c48c829843afe3585bf23"
+        }
+      ],
+      "transformation": "Summarized selected causal findings/results from preceding report; removed raw IPs, engine UUID, Ray ID, URLs and local private references."
+    },
+    {
+      "file": "README.md",
+      "representation": "editorial evidence guide",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "EVIDENCE-INDEX.md",
+          "sha256": "4bf16b70ee0e96452639806339c128829be4217ba8f7651acfafe6542f60ec04"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "REPAIR-SUMMARY.md",
+          "sha256": "933ed52144b9a6b1b46a74521a39bf50ccf2ff5cbef85eb921355c76c3b847da"
+        }
+      ],
+      "transformation": "New evidence navigation and explicit publication/verification limitations derived from reviewed sources."
+    },
+    {
+      "file": "windows-session-observations.json",
+      "representation": "allowlisted source-record fields",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/reboot-20260920T025825Z/windows-20260920T025907486Z-11988.jsonl",
+          "sha256": "1f428d184b085806f77833745d6a7f4af4c7b7b45a7ec5359a1065f1fc5b5b9c"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/reboot-20260920T025825Z/sessions-20260920T025920868Z-13052.jsonl",
+          "sha256": "506cb31f933d84f648887c171e8def90cd93989f7e35fb390b846e3869adcc7d"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/reboot-20260920T025825Z/specific-session-logon-events.json",
+          "sha256": "b12f7ec1f3a8881e1c6b1e0e8d2a49fa5d44ee125fbb070e7bd206ce1eefa394"
+        }
+      ],
+      "transformation": "Decoded UTF-8 BOM and parsed JSONL. Retained all timestamp/event/known/interactive-present fields in the bounded final streams; excluded Windows/WSL UUIDs, invocation IDs, user session details, event messages and all principal identifiers. Logon metadata alone is not an independently interpretable message body."
+    },
+    {
+      "file": "automatic-observer.json",
+      "representation": "allowlisted source-record fields",
+      "sources": [
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/reboot-20260920T025825Z/linux-REBOOT-RESULT.json",
+          "sha256": "41e80a1c2486400dd4abdfeae3119802b96a7ade84ebd031df10dbb5c8433cef"
+        },
+        {
+          "source_root": "private-runner-recovery-incident",
+          "relative_path": "windows/reboot-20260920T025825Z/linux-observations-[boot-id].jsonl",
+          "sha256": "ddfda4c368f28dd50c57f20f513d1b7c29b282680f92bd45cb5ff8b8045e51ef",
+          "relative_path_redaction": "WSL boot identifier in filename replaced with [boot-id]; source SHA256 is unchanged and identifies the exact retained source."
+        }
+      ],
+      "transformation": "Allowlisted result and every observation timestamp/pass/state/heartbeat/error field in bounded qualification series. Excluded boot UUIDs, engine identities, PIDs, capability/provider metadata and private evidence paths."
+    }
+  ]
+}

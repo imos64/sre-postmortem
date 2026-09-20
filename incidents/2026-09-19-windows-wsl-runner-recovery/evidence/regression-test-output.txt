@@ -1,0 +1,45 @@
+EXACT RETAINED OUTPUT: supervisor/tests-output.txt
+test_cloud_provider_waits_for_live_node_gate (test_supervise.ControllerTests.test_cloud_provider_waits_for_live_node_gate) ... ok
+test_containerd_is_started_before_docker (test_supervise.ControllerTests.test_containerd_is_started_before_docker) ... ok
+test_current_down_nodes_override_success_marker (test_supervise.ControllerTests.test_current_down_nodes_override_success_marker) ... ok
+test_delayed_docker_backoff_and_eventual_coordinator (test_supervise.ControllerTests.test_delayed_docker_backoff_and_eventual_coordinator) ... ok
+test_delayed_network_gates_idle_services_then_starts (test_supervise.ControllerTests.test_delayed_network_gates_idle_services_then_starts) ... ok
+test_engine_or_node_identity_failure_blocks_all_mutation (test_supervise.ControllerTests.test_engine_or_node_identity_failure_blocks_all_mutation) ... ok
+test_full_verification_is_periodic_not_every_poll (test_supervise.ControllerTests.test_full_verification_is_periodic_not_every_poll) ... ok
+test_healthy_idle_does_not_start_or_repeat_full_verification (test_supervise.ControllerTests.test_healthy_idle_does_not_start_or_repeat_full_verification) ... ok
+test_last_success_preserved_when_later_verification_fails (test_supervise.ControllerTests.test_last_success_preserved_when_later_verification_fails) ... ok
+test_main_excludes_second_process_with_real_flock (test_supervise.ControllerTests.test_main_excludes_second_process_with_real_flock) ... ok
+test_maintenance_prevents_start_even_after_delay (test_supervise.ControllerTests.test_maintenance_prevents_start_even_after_delay) ... ok
+test_node_gate_requires_live_probes_not_marker (test_supervise.ControllerTests.test_node_gate_requires_live_probes_not_marker) ... ok
+test_node_gate_times_out_and_identity_is_immediately_blocked (test_supervise.ControllerTests.test_node_gate_times_out_and_identity_is_immediately_blocked) ... ok
+test_node_restart_after_success_invalidates_verification (test_supervise.ControllerTests.test_node_restart_after_success_invalidates_verification) ... ok
+test_start_limit_reset_is_bounded_and_not_every_poll (test_supervise.ControllerTests.test_start_limit_reset_is_bounded_and_not_every_poll) ... ok
+test_supervisor_restart_preserves_same_boot_start_limit_backoff (test_supervise.ControllerTests.test_supervisor_restart_preserves_same_boot_start_limit_backoff) ... ok
+test_active_and_activating_units_never_receive_mutations (test_supervise.HostTests.test_active_and_activating_units_never_receive_mutations) ... ok
+test_live_identity_guard_checks_node_storage_ports_label_and_restart (test_supervise.HostTests.test_live_identity_guard_checks_node_storage_ports_label_and_restart) ... ok
+test_live_node_gate_distinguishes_stopped_from_paused_and_api_identity_drift (test_supervise.HostTests.test_live_node_gate_distinguishes_stopped_from_paused_and_api_identity_drift) ... ok
+test_native_socket_does_not_follow_environment_context (test_supervise.HostTests.test_native_socket_does_not_follow_environment_context) ... ok
+test_secret_output_never_appears_in_error (test_supervise.HostTests.test_secret_output_never_appears_in_error) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.096s
+
+OK
+
+EXACT RETAINED OUTPUT: runner/unit-tests.txt
+test_active_task_report_failure_preserves_original_retry_timing (test_runner_supervisor.SupervisionTests.test_active_task_report_failure_preserves_original_retry_timing) ... ok
+test_backoff_is_capped_and_acceptance_resets_failures (test_runner_supervisor.SupervisionTests.test_backoff_is_capped_and_acceptance_resets_failures) ... ok
+test_busy_poll_is_never_reported_as_idle (test_runner_supervisor.SupervisionTests.test_busy_poll_is_never_reported_as_idle) ... ok
+test_delayed_dependency_recovers_without_manual_intervention (test_runner_supervisor.SupervisionTests.test_delayed_dependency_recovers_without_manual_intervention) ... ok
+test_health_check_requires_current_boot_pid_and_fresh_acceptance (test_runner_supervisor.SupervisionTests.test_health_check_requires_current_boot_pid_and_fresh_acceptance) ... ok
+test_installed_runner_import_with_sibling_platform_module (test_runner_supervisor.SupervisionTests.test_installed_runner_import_with_sibling_platform_module) ... ok
+test_instrumentation_delegates_and_never_executes_on_poll (test_runner_supervisor.SupervisionTests.test_instrumentation_delegates_and_never_executes_on_poll) ... ok
+test_network_failure_does_not_create_a_receipt (test_runner_supervisor.SupervisionTests.test_network_failure_does_not_create_a_receipt) ... ok
+test_only_successful_control_protocol_responses_refresh_receipts (test_runner_supervisor.SupervisionTests.test_only_successful_control_protocol_responses_refresh_receipts) ... ok
+test_preservation_keeps_originals_exact_and_is_idempotent (test_runner_supervisor.SupervisionTests.test_preservation_keeps_originals_exact_and_is_idempotent) ... ok
+test_preservation_precedes_existing_runner_recovery (test_runner_supervisor.SupervisionTests.test_preservation_precedes_existing_runner_recovery) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.179s
+
+OK

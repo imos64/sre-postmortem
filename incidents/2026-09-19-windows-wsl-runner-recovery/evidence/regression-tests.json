@@ -1,0 +1,163 @@
+{
+  "unit_test_suites": [
+    {
+      "suite": "supervisor",
+      "passed": 21,
+      "support": "Retained raw unittest output."
+    },
+    {
+      "suite": "runner",
+      "passed": 11,
+      "support": "Retained final raw unittest output; earlier diagnosis reported initial 10, superseded by import-isolation regression."
+    },
+    {
+      "suite": "helper",
+      "passed": 3,
+      "support": "Final repair-summary records pass; this public package does not contain separate raw test output."
+    },
+    {
+      "suite": "health and observer combined",
+      "passed": 14,
+      "support": "Final repair-summary records combined pass; this public package does not contain separate raw test output."
+    }
+  ],
+  "isolated_systemd": {
+    "scope": "Isolated real systemd units with sentinel dependency simulations; no actual Docker/network outage",
+    "started": "2026-09-19T21:49:36.321910+00:00",
+    "state": "PASS",
+    "exit_code": 0,
+    "temporary_units_removed": true,
+    "result_receipt_finished": "2026-09-19T21:49:49.455131+00:00",
+    "last_exercise_event_at": "2026-09-19T21:49:49.697176+00:00",
+    "timestamp_note": "The retained result receipt finished timestamp precedes the final exercise event by about 0.24 seconds. Both source timestamps are preserved with distinct labels; no consolidated end-to-end duration is inferred."
+  },
+  "windows_mocked_cases": [
+    {
+      "case": "backoff",
+      "pass": true,
+      "events": [
+        "wrapper_started",
+        "interactive_sessions",
+        "launch_attempt",
+        "initialization_exited",
+        "interactive_sessions",
+        "retry_wait",
+        "launch_attempt",
+        "initialization_exited",
+        "interactive_sessions",
+        "retry_wait",
+        "launch_attempt",
+        "initialization_exited",
+        "interactive_sessions",
+        "retry_wait",
+        "launch_attempt",
+        "duplicate_keeper_already_active",
+        "interactive_sessions"
+      ],
+      "backoff_seconds": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "case": "timeout",
+      "pass": true,
+      "events": [
+        "wrapper_started",
+        "interactive_sessions",
+        "launch_attempt",
+        "initialization_timeout",
+        "interactive_sessions",
+        "retry_wait",
+        "launch_attempt",
+        "duplicate_keeper_already_active",
+        "interactive_sessions"
+      ],
+      "backoff_seconds": [
+        1
+      ]
+    },
+    {
+      "case": "keeper_exit",
+      "pass": true,
+      "events": [
+        "wrapper_started",
+        "interactive_sessions",
+        "launch_attempt",
+        "keeper_active",
+        "interactive_sessions",
+        "keeper_exited",
+        "interactive_sessions",
+        "retry_wait",
+        "launch_attempt",
+        "duplicate_keeper_already_active",
+        "interactive_sessions"
+      ],
+      "backoff_seconds": [
+        1
+      ]
+    },
+    {
+      "case": "duplicate",
+      "pass": true,
+      "events": [
+        "wrapper_started",
+        "interactive_sessions",
+        "launch_attempt",
+        "duplicate_keeper_already_active",
+        "interactive_sessions"
+      ],
+      "backoff_seconds": []
+    }
+  ],
+  "windows_mocked_scope": "PowerShell wrapper mocked launch lifecycle only; no actual WSL launches or task mutations",
+  "missed_initial_test_case": "Mocks explicitly supplied LogDirectory; the actual omitted-default PowerShell -File invocation failed on first reboot.",
+  "default_invocation_regression": {
+    "verified_utc": "2026-09-19T22:30:33.828879+00:00",
+    "exit": 0,
+    "bootstrap_pass": true
+  },
+  "scope_limit": "Unit/mocked/isolated tests alone are not proof of real Windows boot recovery.",
+  "isolated_systemd_events": [
+    {
+      "at": "2026-09-19T21:49:39.852856+00:00",
+      "event": "delayed-docker-observed",
+      "state": "RECOVERING"
+    },
+    {
+      "at": "2026-09-19T21:49:44.608275+00:00",
+      "event": "docker-recovered-automatically",
+      "state": "RECOVERING"
+    },
+    {
+      "at": "2026-09-19T21:49:46.608923+00:00",
+      "event": "delayed-network-observed",
+      "state": "RECOVERING"
+    },
+    {
+      "at": "2026-09-19T21:49:48.611705+00:00",
+      "event": "all-simulated-dependencies-recovered",
+      "state": "DEPENDENCIES_READY"
+    },
+    {
+      "at": "2026-09-19T21:49:48.663608+00:00",
+      "event": "duplicate-supervisor-excluded",
+      "exit_code": 75
+    },
+    {
+      "at": "2026-09-19T21:49:48.673349+00:00",
+      "event": "isolated-idle-process-killed"
+    },
+    {
+      "at": "2026-09-19T21:49:49.696855+00:00",
+      "event": "isolated-idle-process-recovered",
+      "state": "DEPENDENCIES_READY"
+    },
+    {
+      "at": "2026-09-19T21:49:49.697176+00:00",
+      "event": "PASS",
+      "scope": "Actual isolated systemd lifecycle with sentinel Docker/network simulations; no actual Docker/network outage and no benchmark dispatch"
+    }
+  ]
+}

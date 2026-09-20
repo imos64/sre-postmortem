@@ -1,0 +1,20 @@
+{
+  "windows": {
+    "verified_utc": "2026-09-20T03:18:01.398989+00:00",
+    "status": "PASS",
+    "exit": 0,
+    "apply_requested": false,
+    "task_or_workload_mutation": false,
+    "mode": "PREPARED_ONLY",
+    "stop_workloads": false,
+    "stop_running_task": false
+  },
+  "linux": {
+    "status": "DRY_RUN_PASS",
+    "guarded_files": 15,
+    "applied": false,
+    "support": "Final ROLLBACK.md and REPAIR-SUMMARY.md report the completed dry-run. A separate raw Linux dry-run receipt is not included in this public collection."
+  },
+  "rollback_effect": "Guarded Windows Action restore, then incident Linux files; original standby policy becomes effective on next service start and intentionally makes runner Offline. No cluster/data/credential deletion.",
+  "test_recorder": "Completed, archived and disabled after acceptance; continuous recovery and keeper remain active."
+}

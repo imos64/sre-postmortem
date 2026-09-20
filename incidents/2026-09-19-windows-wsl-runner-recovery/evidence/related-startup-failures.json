@@ -1,0 +1,37 @@
+{
+  "scope": "Earlier same-day live Cloudflare/connector/startup recovery; separate from the dormant runner standby cause. Its no-reboot limitation was later closed by the current incident final boot.",
+  "observed_at_utc": "2026-09-19T21:14:48Z",
+  "initial_public_checks": {
+    "total": 9,
+    "http_status": 530,
+    "cloudflare_error": 1033
+  },
+  "confirmed_failures": [
+    {
+      "failure": "Tunnel initialization guard rejected changed worker addresses.",
+      "repair": "Use stable Downward API node name mapping; validate dynamic host IP before constructing existing default-drop firewall rules."
+    },
+    {
+      "failure": "Ingress API network policy contained stale control-plane /32.",
+      "repair": "Reconcile only verified current exact API endpoint /32; retain all other policy fields."
+    },
+    {
+      "failure": "Coordinator treated missing controller-owned proxy containers as missing mandatory data/node containers.",
+      "repair": "Verify owner/labels/ports/storage and let existing controller recreate stateless proxies; retain exact node/data identities."
+    },
+    {
+      "failure": "60-second caller timeout wrapped a 420-second service gate.",
+      "repair": "Asynchronous start plus bounded activation observation up to 450 seconds."
+    }
+  ],
+  "coordinator_recovered_utc": "2026-09-19T21:28:28Z",
+  "recovered_state": "READY_WITH_WARNINGS",
+  "recovered_public_checks": {
+    "passing": 9,
+    "total": 9,
+    "includes_expected_401": true
+  },
+  "credential_dns_or_tunnel_identity_changes": false,
+  "preexisting_warnings": "The same two unmatched orderer headless Services.",
+  "original_scope_limit": "That earlier live repair alone did not demonstrate actual Windows reboot recovery."
+}

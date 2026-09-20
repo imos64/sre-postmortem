@@ -1,0 +1,80 @@
+{
+  "at": "2026-09-20T03:24:46.047974+00:00",
+  "state": "READY_WITH_WARNINGS",
+  "checks": {
+    "kind-dev": {
+      "nodes_ready": 4,
+      "api_ready": true,
+      "identities_match": true,
+      "pvc_preserved": 55,
+      "pv_preserved": 55,
+      "workloads_ready": true,
+      "controllers_verified": 123
+    },
+    "kind-imos-terminal-acceptance": {
+      "nodes_ready": 1,
+      "api_ready": true,
+      "identities_match": true,
+      "pvc_preserved": 0,
+      "pv_preserved": 0,
+      "workloads_ready": true,
+      "controllers_verified": 8
+    },
+    "docker": {
+      "ready": true
+    },
+    "imos-kube-connector.service": {
+      "ActiveState": "active",
+      "SubState": "running"
+    },
+    "imos-benchmark-runner.service": {
+      "ActiveState": "active",
+      "SubState": "running"
+    },
+    "supervision": {
+      "ActiveState": "active",
+      "SubState": "running",
+      "state": "DEPENDENCIES_READY",
+      "observed_age_seconds": 4.54
+    },
+    "runner": {
+      "state": "READY",
+      "accepted_age_seconds": 8.76,
+      "successful_polls": 107,
+      "idle": true
+    },
+    "wsl_lifetime": {
+      "foreground_lock_held": true
+    },
+    "last_full_verification": {
+      "state": "READY_WITH_WARNINGS",
+      "started": "2026-09-20T03:00:21.335795+00:00",
+      "finished": "2026-09-20T03:01:21.272672+00:00"
+    }
+  },
+  "errors": [],
+  "warnings": [
+    "kind-dev:no-ready-endpoint:hlf-orderer/raft-orderer-headless",
+    "kind-dev:no-ready-endpoint:hlf-orderer/v2-raft-orderer-headless"
+  ],
+  "comprehensive_coordinator": {
+    "started": "2026-09-20T03:00:21.335795+00:00",
+    "finished": "2026-09-20T03:01:21.272672+00:00",
+    "state": "READY_WITH_WARNINGS",
+    "checks": {
+      "nodes_api": "PASS",
+      "api_policy_endpoint": "PASS (current exact API /32)",
+      "controller_proxies": "PASS: enrolled owners, labels, ports and storage verified",
+      "backup_drive": "PASS",
+      "workloads_endpoints_storage": "PASS",
+      "security_and_certificate": "PASS (configuration and readiness; no packet qualification)",
+      "persistent_directories": "PASS: 55 existing backing directories",
+      "database_and_fabric": "PASS read-only SQL, all 8 peer memberships, 8 authorized channel queries, application ledger queries and orderer TLS; historical unmatched application records remain UNKNOWN",
+      "host_and_benchmark_services": "PASS: dependencies and fresh authenticated runner heartbeat checked without test trials",
+      "public_https": "PASS (trusted TLS, public DNS, no verification proxy)"
+    },
+    "business_workflows": "UNKNOWN: no authenticated business writes or benchmark execution"
+  },
+  "snapshot_scope": "Recorded final read-only health after the completed test recorder was disabled. Publication performed no new platform probes.",
+  "endpoint_count_note": "For corrected protocol/count breakdown use endpoint-verification.json; the private prose incorrectly called all 11 endpoint checks HTTPS."
+}

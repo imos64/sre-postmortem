@@ -12,13 +12,16 @@ Reports focus on system behavior and contributing conditions rather than blame.
 
 | Incident date | Report and architecture | Environment | Recorded outcome |
 | --- | --- | --- | --- |
+| 2026-09-19 | [Windows/WSL Recovery and Terminal-Bench Runner Offline](incidents/2026-09-19-windows-wsl-runner-recovery/README.md) | NucBoxK10 Windows / WSL2 / native Docker / kind | Real runner restored; continuous recovery installed; third actual reboot proved readiness and accepted heartbeats before Windows sign-in |
 | 2026-09-16 | [Fixam4me Booking Service Restarts](incidents/2026-09-16-booking-service-restarts/README.md) | Fixam4me development platform on kind | Automatic recovery observed; unhandled expiry-task rejection identified; dependency connectivity cause and durable fix remain open |
 | 2026-09-08 | [Hyperledger Fabric Development Outage](incidents/2026-09-08-fabric-couchdb-oom/README.md) | TreeTracker development network on kind | 17 affected application Pods recovered; governance, monitoring and storage follow-ups remain |
 
 Each incident guide includes its application architecture, marked failure areas,
 full report, and reviewed evidence. The September 16 guide follows the Fixam4me
 user-to-service path and distinguishes the confirmed application failure from the
-unresolved PostgreSQL connection failure.
+unresolved PostgreSQL connection failure. The September 19 guide follows the
+Windows boot-to-runner recovery chain, distinguishes the related tunnel failures,
+and retains the first two test limitations alongside the final before-sign-in proof.
 
 ## What a postmortem should establish
 
@@ -47,6 +50,7 @@ incidents/
 └── YYYY-MM-DD-incident-slug/
     ├── README.md                         Incident guide and architecture
     ├── YYYY-MM-DD-...-postmortem.md       Full dated postmortem
+    ├── RUNBOOK.md / ACTIONS.md            Operational procedures and action register, when included
     └── evidence/
         ├── README.md                     Evidence inventory and capture limits
         ├── *.txt / *.json                Reviewed excerpts and verification records

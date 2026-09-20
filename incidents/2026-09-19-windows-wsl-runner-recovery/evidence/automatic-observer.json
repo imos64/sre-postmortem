@@ -1,0 +1,302 @@
+{
+  "scope": "Selected retained automatically generated Linux qualification result and full bounded observation series. No publication-time health probes were made.",
+  "result": {
+    "at": "2026-09-20T02:59:14.592366+00:00",
+    "state": "AUTOMATIC_RECOVERY_VERIFIED",
+    "reason": "Different Windows and WSL boots; read-only live platform checks; at least five accepted heartbeats spanning at least 120 seconds during at least 300 seconds of automated observation",
+    "observer_startup_commands": false,
+    "external_manual_start_commands": "CHECK_WINDOWS_TASK_AND_SESSION_TIMELINE",
+    "samples": 21,
+    "distinct_accepted_heartbeats": 12,
+    "started": "2026-09-20T02:59:14.592395+00:00",
+    "windows_boot": "2026-09-20T02:58:25.5000000Z",
+    "actual_windows_reboot": true,
+    "latest_health_state": "READY_WITH_WARNINGS",
+    "last_observed_at": "2026-09-20T03:04:38.994329+00:00",
+    "elapsed_observation_seconds": 309.77,
+    "heartbeat_span_seconds": 180.21,
+    "observation_span_seconds": 167.22,
+    "finished": "2026-09-20T03:04:38.994398+00:00",
+    "first_good_at": "2026-09-20T03:01:37.152657+00:00",
+    "before_sign_in": "CHECK_WINDOWS_SESSION_TIMELINE"
+  },
+  "observations": [
+    {
+      "at": "2026-09-20T02:59:14.593737+00:00",
+      "pass": false,
+      "health_state": "UNAVAILABLE",
+      "runner": {},
+      "errors": [
+        "kind-dev: check failed: kubectl",
+        "kind-imos-terminal-acceptance: check failed: kubectl",
+        "imos-kube-connector.service is not active"
+      ]
+    },
+    {
+      "at": "2026-09-20T02:59:33.907981+00:00",
+      "pass": false,
+      "health_state": "UNAVAILABLE",
+      "runner": {},
+      "errors": [
+        "kind-dev: check failed: kubectl",
+        "imos-kube-connector.service is not active"
+      ]
+    },
+    {
+      "at": "2026-09-20T02:59:49.105872+00:00",
+      "pass": false,
+      "health_state": "UNAVAILABLE",
+      "runner": {},
+      "errors": [
+        "imos-benchmark-runner.service is not active"
+      ]
+    },
+    {
+      "at": "2026-09-20T03:00:04.609497+00:00",
+      "pass": false,
+      "health_state": "UNAVAILABLE",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 9.12,
+        "successful_polls": 1,
+        "last_accepted_epoch": 1789873195.859566,
+        "idle": true
+      },
+      "errors": [
+        "supervisor reports RECOVERING"
+      ]
+    },
+    {
+      "at": "2026-09-20T03:00:19.992628+00:00",
+      "pass": false,
+      "health_state": "UNAVAILABLE",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 10.93,
+        "successful_polls": 2,
+        "last_accepted_epoch": 1789873209.3950472,
+        "idle": true
+      },
+      "errors": [
+        "supervisor reports RECOVERING"
+      ]
+    },
+    {
+      "at": "2026-09-20T03:00:35.341091+00:00",
+      "pass": false,
+      "health_state": "UNAVAILABLE",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 12.8,
+        "successful_polls": 3,
+        "last_accepted_epoch": 1789873222.793709,
+        "idle": true
+      },
+      "errors": [
+        "supervisor reports RECOVERING"
+      ]
+    },
+    {
+      "at": "2026-09-20T03:00:50.598935+00:00",
+      "pass": false,
+      "health_state": "UNAVAILABLE",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 2.44,
+        "successful_polls": 5,
+        "last_accepted_epoch": 1789873248.3562243,
+        "idle": true
+      },
+      "errors": [
+        "supervisor reports RECOVERING"
+      ]
+    },
+    {
+      "at": "2026-09-20T03:01:05.802768+00:00",
+      "pass": false,
+      "health_state": "UNAVAILABLE",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 4.62,
+        "successful_polls": 6,
+        "last_accepted_epoch": 1789873261.376939,
+        "idle": true
+      },
+      "errors": [
+        "supervisor reports RECOVERING"
+      ]
+    },
+    {
+      "at": "2026-09-20T03:01:21.009700+00:00",
+      "pass": false,
+      "health_state": "UNAVAILABLE",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 6.94,
+        "successful_polls": 7,
+        "last_accepted_epoch": 1789873274.2574725,
+        "idle": true
+      },
+      "errors": [
+        "supervisor reports RECOVERING"
+      ]
+    },
+    {
+      "at": "2026-09-20T03:01:36.952057+00:00",
+      "pass": true,
+      "health_state": "READY_WITH_WARNINGS",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 10.35,
+        "successful_polls": 8,
+        "last_accepted_epoch": 1789873286.7969093,
+        "idle": true
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-09-20T03:01:52.152954+00:00",
+      "pass": true,
+      "health_state": "READY_WITH_WARNINGS",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 12.02,
+        "successful_polls": 9,
+        "last_accepted_epoch": 1789873300.3426063,
+        "idle": true
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-09-20T03:02:10.304203+00:00",
+      "pass": true,
+      "health_state": "READY_WITH_WARNINGS",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 1.36,
+        "successful_polls": 11,
+        "last_accepted_epoch": 1789873329.1295617,
+        "idle": true
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-09-20T03:02:25.496670+00:00",
+      "pass": true,
+      "health_state": "READY_WITH_WARNINGS",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 3.71,
+        "successful_polls": 12,
+        "last_accepted_epoch": 1789873341.97942,
+        "idle": true
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-09-20T03:02:42.857443+00:00",
+      "pass": true,
+      "health_state": "READY_WITH_WARNINGS",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 8.26,
+        "successful_polls": 13,
+        "last_accepted_epoch": 1789873354.7807786,
+        "idle": true
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-09-20T03:02:58.046467+00:00",
+      "pass": true,
+      "health_state": "READY_WITH_WARNINGS",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 8.73,
+        "successful_polls": 14,
+        "last_accepted_epoch": 1789873369.5232182,
+        "idle": true
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-09-20T03:03:16.186552+00:00",
+      "pass": true,
+      "health_state": "READY_WITH_WARNINGS",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 13.95,
+        "successful_polls": 15,
+        "last_accepted_epoch": 1789873382.4274774,
+        "idle": true
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-09-20T03:03:31.388108+00:00",
+      "pass": true,
+      "health_state": "READY_WITH_WARNINGS",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 1.01,
+        "successful_polls": 17,
+        "last_accepted_epoch": 1789873410.5660036,
+        "idle": true
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-09-20T03:03:49.523684+00:00",
+      "pass": true,
+      "health_state": "READY_WITH_WARNINGS",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 6.61,
+        "successful_polls": 18,
+        "last_accepted_epoch": 1789873423.1126616,
+        "idle": true
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-09-20T03:04:04.737095+00:00",
+      "pass": true,
+      "health_state": "READY_WITH_WARNINGS",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 6.39,
+        "successful_polls": 19,
+        "last_accepted_epoch": 1789873438.5432737,
+        "idle": true
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-09-20T03:04:19.936522+00:00",
+      "pass": true,
+      "health_state": "READY_WITH_WARNINGS",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 8.54,
+        "successful_polls": 20,
+        "last_accepted_epoch": 1789873451.5968304,
+        "idle": true
+      },
+      "errors": []
+    },
+    {
+      "at": "2026-09-20T03:04:38.067937+00:00",
+      "pass": true,
+      "health_state": "READY_WITH_WARNINGS",
+      "runner": {
+        "state": "READY",
+        "accepted_age_seconds": 11.24,
+        "successful_polls": 21,
+        "last_accepted_epoch": 1789873467.0059304,
+        "idle": true
+      },
+      "errors": []
+    }
+  ],
+  "boundary": "Raw Linux result intentionally defers before_sign_in to Windows timeline; final-before-signin.json resolves this joined condition. Epoch values retained here are accepted-response timestamps, not identity fields."
+}

@@ -1,0 +1,39 @@
+{
+  "file_check": {
+    "at": "2026-09-20T03:14:26.313057+00:00",
+    "state": "PASS",
+    "files_verified": 4209,
+    "missing": [],
+    "changed": [],
+    "scope": "Hashes for files up to1MiB and credential configuration/original Runner; sizes for larger retained files; no credential values recorded"
+  },
+  "record_comparison": {
+    "observed_at": "2026-09-20T03:17:22.218302+00:00",
+    "job_record_ids_statuses_update_times_unchanged": true,
+    "before_records": 51,
+    "after_records": 51,
+    "added_records": 0,
+    "removed_records": 0,
+    "changed_records": 0,
+    "active_record_exists": false,
+    "report_exists": false,
+    "original_runner_source_unchanged": true
+  },
+  "record_population": {
+    "terminal_bench_jobs": 40,
+    "harbor_runs": 8,
+    "drafts": 2,
+    "result_refreshes": 1
+  },
+  "storage": {
+    "pvc_identities_verified": 55,
+    "pv_identities_verified": 55,
+    "backing_directories_verified": 55,
+    "node_replacement": false,
+    "cluster_recreation": false,
+    "docker_prune": false
+  },
+  "credentials_pairing_provider_keys_unchanged": true,
+  "paid_trials_replayed": 0,
+  "limit": "Files up to 1 MiB and credential configuration/original Runner were hashed; larger retained files were size-checked. Existing record IDs/statuses/update times were compared privately, not full database byte equality. No business-write/data-integrity certification is claimed."
+}

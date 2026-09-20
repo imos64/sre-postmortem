@@ -1,0 +1,885 @@
+{
+  "scope": "Selected fields from retained automatic Windows wrapper and independent session observer streams. All known interactive-session observations from these bounded streams are retained; session details/identifiers omitted.",
+  "wrapper_events": [
+    {
+      "utc": "2026-09-20T02:59:07.6192734Z",
+      "event": "wrapper_started",
+      "attempt": 0,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T02:59:07.6943119Z",
+      "event": "interactive_sessions",
+      "attempt": 0,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T02:59:07.6973116Z",
+      "event": "launch_attempt",
+      "attempt": 1
+    },
+    {
+      "utc": "2026-09-20T02:59:17.8068607Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T02:59:20.8310024Z",
+      "event": "keeper_active",
+      "attempt": 1
+    },
+    {
+      "utc": "2026-09-20T02:59:20.8460237Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T02:59:30.9070625Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T02:59:40.9929214Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T02:59:51.0799206Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:00:01.1762029Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:00:11.3049843Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:00:21.3716084Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:00:31.4331504Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:00:41.5281195Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:00:51.6117113Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:01:01.6767059Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:01:11.7661592Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:01:21.8796025Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:01:31.9805169Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:01:42.0695171Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:01:52.1448285Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:02:02.2452470Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:02:12.3429248Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:02:22.4485523Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:02:32.5424979Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:02:42.6288127Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:02:52.7352265Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:03:02.8275780Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:03:12.9219053Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:03:23.0158999Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:03:33.1065750Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:03:43.1858483Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:03:53.2926479Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:04:03.4132180Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:04:13.5103003Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:04:23.6072136Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:04:33.7063584Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:04:43.7932485Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:04:53.8907302Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:05:03.9742636Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:05:14.0554031Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:05:24.1401716Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:05:34.2224855Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:05:44.3229669Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:05:54.4311881Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:06:04.5477689Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:06:14.6498628Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:06:24.7621832Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:06:34.8509346Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:06:44.9612622Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:06:55.0658316Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:07:05.1881817Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:07:15.2769730Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:07:25.3614055Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:07:35.5358919Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:07:45.6431634Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:07:55.7198611Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:08:05.7850671Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:08:15.8951102Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:08:26.0016709Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:08:36.1274066Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:08:46.2157949Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:08:56.3311286Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    },
+    {
+      "utc": "2026-09-20T03:09:06.4211255Z",
+      "event": "interactive_sessions",
+      "attempt": 1,
+      "known": true,
+      "interactive_present": false
+    }
+  ],
+  "independent_session_observations": [
+    {
+      "utc": "2026-09-20T02:59:21.0290653Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T02:59:31.2985543Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T02:59:41.3028913Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T02:59:51.3150738Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:00:01.3313272Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:00:11.3501675Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:00:21.3696270Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:00:31.3849342Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:00:41.4312491Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:00:51.4523288Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:01:01.5004303Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:01:11.5235206Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:01:21.5470244Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:01:31.5702724Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:01:41.5932579Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:01:51.6112175Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:02:01.6361649Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:02:11.6474465Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:02:21.6581271Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:02:31.6808658Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:02:41.7041332Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:02:51.7283051Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:03:01.7520084Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:03:11.7770099Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:03:21.7866063Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:03:31.8099020Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:03:41.8403804Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:03:51.8557061Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:04:01.8691647Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:04:11.8906592Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:04:21.9124563Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:04:31.9384893Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:04:41.9545525Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:04:51.9673538Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:05:01.9770286Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:05:11.9970847Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:05:22.0293526Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:05:32.0523559Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:05:42.0743136Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:05:52.0943109Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:06:02.1076879Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:06:12.1336366Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:06:22.1525911Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:06:32.1695085Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:06:42.1833787Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:06:52.1961848Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:07:02.2298808Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:07:12.2420785Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:07:22.2578181Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:07:32.2836206Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:07:42.2940706Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:07:52.3278747Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:08:02.3729627Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:08:12.4007192Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:08:22.4121557Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:08:32.4220392Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:08:42.4425088Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:08:52.4624928Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:09:02.4841642Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    },
+    {
+      "utc": "2026-09-20T03:09:12.4967190Z",
+      "event": "interactive_sessions",
+      "known": true,
+      "interactive_present": false,
+      "process_session": 0
+    }
+  ],
+  "console_logon_event_metadata": [
+    {
+      "utc": "2026-09-20T03:11:24.5601162Z",
+      "id": 22
+    },
+    {
+      "utc": "2026-09-20T03:11:24.5001400Z",
+      "id": 21
+    }
+  ],
+  "logon_event_note": "Messages identify session actions privately; message bodies/user identifiers omitted. final-before-signin.json joins the exact first console sign-in to these records.",
+  "known_signed_out_counts": {
+    "wrapper": 61,
+    "independent": 60
+  }
+}

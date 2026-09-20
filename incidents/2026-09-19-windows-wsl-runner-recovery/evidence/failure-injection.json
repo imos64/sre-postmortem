@@ -1,0 +1,80 @@
+{
+  "scope": "Actual runner process tests with runner-only Docker shim; shared Docker, network and Kubernetes were never stopped.",
+  "delayed_dependency": {
+    "blocked": {
+      "observed_at": "2026-09-19T21:56:05.524814+00:00",
+      "at": "2026-09-19T21:56:05.238236+00:00",
+      "state": "DEPENDENCY_UNAVAILABLE",
+      "accepted": false,
+      "last_accepted_at": null,
+      "successful_polls": 0,
+      "consecutive_failures": 2,
+      "idle": true,
+      "pid": 191086,
+      "unit_main_pid": 191086,
+      "nrestarts": 0
+    },
+    "released": {
+      "observed_at": "2026-09-19T21:56:05.534151+00:00",
+      "at": "2026-09-19T21:56:05.238236+00:00",
+      "state": "DEPENDENCY_UNAVAILABLE",
+      "accepted": false,
+      "last_accepted_at": null,
+      "successful_polls": 0,
+      "consecutive_failures": 2,
+      "idle": true,
+      "pid": 191086,
+      "unit_main_pid": 191086,
+      "nrestarts": 0
+    },
+    "recovered": {
+      "observed_at": "2026-09-19T21:56:35.998537+00:00",
+      "at": "2026-09-19T21:56:35.802950+00:00",
+      "state": "READY",
+      "accepted": true,
+      "last_accepted_at": "2026-09-19T21:56:35.802926+00:00",
+      "successful_polls": 1,
+      "consecutive_failures": 0,
+      "idle": true,
+      "pid": 191086,
+      "unit_main_pid": 191086,
+      "nrestarts": 0
+    },
+    "same_process_recovered": true,
+    "independent_remote_acceptance_utc": "2026-09-19T21:56:49.706Z"
+  },
+  "idle_process_failure": {
+    "before_sigkill": {
+      "observed_at": "2026-09-19T21:56:51.236001+00:00",
+      "at": "2026-09-19T21:56:48.543129+00:00",
+      "state": "READY",
+      "accepted": true,
+      "last_accepted_at": "2026-09-19T21:56:48.543113+00:00",
+      "successful_polls": 2,
+      "consecutive_failures": 0,
+      "idle": true,
+      "pid": 191086,
+      "unit_main_pid": 191086,
+      "nrestarts": 0
+    },
+    "sigkill_utc": "2026-09-19T21:56:51.236Z",
+    "recovered": {
+      "observed_at": "2026-09-19T21:57:07.268499+00:00",
+      "at": "2026-09-19T21:57:07.073632+00:00",
+      "state": "READY",
+      "accepted": true,
+      "last_accepted_at": "2026-09-19T21:57:07.073612+00:00",
+      "successful_polls": 1,
+      "consecutive_failures": 0,
+      "idle": true,
+      "pid": 195653,
+      "unit_main_pid": 195653,
+      "nrestarts": 1
+    },
+    "independent_remote_acceptance_utc": "2026-09-19T21:57:20.782Z",
+    "gates": "Complete remote queue audit found no pending work; recent accepted idle receipt, no child process or active/report record."
+  },
+  "temporary_injection_files_removed": true,
+  "excluded_attempt": "Earlier fixture forwarding-path error retained privately as non-acceptance; clean tests above are the qualifying run.",
+  "paid_trials_executed": 0
+}

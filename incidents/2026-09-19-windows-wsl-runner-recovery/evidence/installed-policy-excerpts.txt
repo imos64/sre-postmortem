@@ -1,0 +1,62 @@
+EXACT EXCERPT: runner/zzz-recovery.conf, lines 1-13
+[Unit]
+StartLimitIntervalSec=0
+
+[Service]
+ExecStartPre=/opt/imos-platform-startup/wait-nodes.py
+TimeoutStartSec=430s
+ExecStart=
+ExecStart=/home/imos/.local/share/imos-benchmark-runner/app/.venv/bin/python -I /opt/imos-platform-startup/runner-supervisor.py
+Restart=always
+RestartSec=10s
+RestartSteps=5
+RestartMaxDelaySec=60s
+TimeoutStopSec=90s
+
+EXACT EXCERPT: supervisor/imos-platform-recovery.service, lines 1-18
+[Unit]
+Description=Continuous identity-guarded recovery of the existing Imos platform
+After=local-fs.target network.target
+Wants=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 -I /opt/imos-platform-startup/supervise.py run
+Restart=always
+RestartSec=15
+TimeoutStopSec=45
+UMask=0022
+Nice=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+
+EXACT EXCERPT: supervisor/connector-zzz-recovery.conf, lines 1-10
+[Unit]
+StartLimitIntervalSec=0
+[Service]
+ExecStartPre=
+ExecStartPre=/opt/imos-platform-startup/wait-nodes.py
+TimeoutStartSec=430s
+Restart=always
+RestartSec=10s
+RestartSteps=5
+RestartMaxDelaySec=60s
+
+EXACT EXCERPT: windows/startup-supervised.ps1, lines 1-14
+[CmdletBinding()]
+param(
+    [int]$InitializationTimeoutSeconds = 300,
+    [int]$InitialBackoffSeconds = 10,
+    [int]$MaximumBackoffSeconds = 300,
+    [int]$SessionObservationSeconds = 600,
+    [string]$LogDirectory
+)
+$ErrorActionPreference = 'Stop'
+$ProgressPreference = 'SilentlyContinue'
+# Windows PowerShell does not initialize PSScriptRoot while binding default
+# parameter expressions under -File. Resolve it after parameter binding.
+if ([string]::IsNullOrWhiteSpace($LogDirectory)) { $LogDirectory = Join-Path $PSScriptRoot 'logs' }
+if ($InitializationTimeoutSeconds -lt 1 -or $InitialBackoffSeconds -lt 1 -or $MaximumBackoffSeconds -lt $InitialBackoffSeconds) { throw 'Invalid retry configuration' }

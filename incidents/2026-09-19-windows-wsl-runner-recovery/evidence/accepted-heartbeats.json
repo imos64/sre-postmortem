@@ -1,0 +1,36 @@
+{
+  "source_kind": "Independent read-only production control-plane database observations; these reads do not update runner heartbeat timestamps.",
+  "samples": [
+    {
+      "observed_at": "2026-09-20T03:14:50.246Z",
+      "accepted_last_seen_utc": "2026-09-20T03:14:44.060Z"
+    },
+    {
+      "observed_at": "2026-09-20T03:15:53.798Z",
+      "accepted_last_seen_utc": "2026-09-20T03:15:40.990Z"
+    },
+    {
+      "observed_at": "2026-09-20T03:16:56.685Z",
+      "accepted_last_seen_utc": "2026-09-20T03:16:51.410Z"
+    }
+  ],
+  "continuity_span_seconds": 126.439,
+  "strictly_advancing": true,
+  "same_pairing_verified_privately": true,
+  "runner_process_stable": {
+    "pid": 40755,
+    "nrestarts": 0,
+    "receipt_pid_matches_systemd": true
+  },
+  "final_local_receipt": {
+    "at": "2026-09-20T03:17:18.698858+00:00",
+    "state": "READY",
+    "accepted": true,
+    "idle": true,
+    "successful_polls": 76,
+    "consecutive_failures": 0,
+    "last_accepted_at": "2026-09-20T03:17:18.698842+00:00"
+  },
+  "capability_scope": "Core readiness capabilities retained; two extra backend capability fields appeared, so the entire remote metadata JSON is not claimed byte-identical.",
+  "authentication_boundary": "Acceptance evidence is from the real paired runner; no user cookies were extracted and no authentication controls were changed."
+}

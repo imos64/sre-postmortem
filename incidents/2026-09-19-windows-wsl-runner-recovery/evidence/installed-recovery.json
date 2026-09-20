@@ -1,0 +1,39 @@
+{
+  "distribution": "Ubuntu-24.04",
+  "linux_user": "imos",
+  "docker_context": "default",
+  "docker_socket": "unix:///var/run/docker.sock",
+  "engine_type": "Native Ubuntu Docker; existing enrolled engine, separate from Docker Desktop.",
+  "boot_task": "TreeTracker kind-dev startup",
+  "boot_task_trigger": "AtStartup with 30-second delay",
+  "boot_task_principal_mode": "S4U, Limited; final launch observed in session 0",
+  "boot_task_change_scope": "Action only; original principal, trigger, settings and DACL preserved.",
+  "sign_in_task": "Imos-Control-Planes-77ff47b974",
+  "sign_in_helper": "Bounded health observer; task Running is not a health verdict.",
+  "windows_launch_retry_seconds": {
+    "initial": 10,
+    "maximum": 300,
+    "initialization_timeout": 300
+  },
+  "foreground_keeper": "Singleton flock; retains WSL lifetime and checks continuous root recovery supervisor.",
+  "dependency_order": [
+    "containerd and native Docker",
+    "verified existing cluster containers and networking",
+    "live node/API readiness",
+    "connector and paired benchmark runner",
+    "comprehensive platform verification"
+  ],
+  "identity_guards": [
+    "Enrolled engine, existing container, cluster and node identities",
+    "Expected storage mappings and PVC/PV identities",
+    "Exact current API endpoint /32 after identity validation"
+  ],
+  "supervision": "Repeated dependency checks with backoff; starts inactive dependencies only; running workloads are not restarted by health probes.",
+  "runner_policy": "Restart=always; 10-to-60-second systemd backoff; no permanent start-rate lockout.",
+  "runner_update_boundary": "Root-owned supervisor and final systemd drop-in are outside mutable runner application/base-unit files; supervisor loads current installed Runner.",
+  "health_acceptance": "Successful authenticated control-plane response; current boot, matching MainPID, accepted age <=45 seconds; node/API/workload/storage checks, fresh supervisor and held WSL keeper lock.",
+  "sign_in_policy_changed": false,
+  "migration_performed": false,
+  "paid_trial_replay_performed": false,
+  "rollback_applied": false
+}

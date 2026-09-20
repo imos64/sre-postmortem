@@ -1,0 +1,35 @@
+{
+  "representation": "Derived incident finding joined to retained original service source, journal and control-plane observation.",
+  "last_accepted_heartbeat_utc": "2026-09-19T21:08:22.992000+00:00",
+  "real_runner_stopped_utc": "2026-09-19T21:08:31Z",
+  "standby_service_started_utc": "2026-09-19T21:10:33Z",
+  "new_boot_standby_receipt_utc": "2026-09-19T21:10:35.373466+00:00",
+  "effective_service_override": "90-platform-startup.conf",
+  "effective_executable": "/opt/imos-platform-startup/benchmark-standby.py",
+  "effective_restart_policy": "no",
+  "reported_state": "READY_NO_DISPATCH",
+  "dispatch_enabled": false,
+  "remote_queue_polled": false,
+  "mechanism": "The pre-existing drop-in took effect at service start after reboot; standby held runner.lock and refreshed local readiness while never authenticating or polling the remote queue. The previously running real process masked the dormant override in a manual already-active test.",
+  "helper_behavior": "One restore(config) call; with keep_alive enabled it entered an unconditional sleep loop even after caught startup failure.",
+  "dashboard_offline_indicator": "Correct; not hidden or weakened by repair.",
+  "historical_limits": [
+    "Task Scheduler Operational history was disabled.",
+    "LSA/Operational was unavailable.",
+    "Missing historical events were not reconstructed as if captured."
+  ],
+  "failed_boot_windows": {
+    "boot_utc": "2026-09-19T21:08:58.5000000Z",
+    "console_signin_utc": "2026-09-19T21:09:12Z",
+    "signin_task_started_utc": "2026-09-19T21:09:12Z",
+    "boot_task_started_utc": "2026-09-19T21:09:39Z",
+    "boot_wrapper_launch_utc": "2026-09-19T21:09:55Z",
+    "foreground_keeper_active_utc_approximate": "2026-09-19T21:10:00Z",
+    "both_task_result_codes": 267009,
+    "meaning": "0x41301: running, not completed platform readiness. Startup happened on the original failed boot.",
+    "native_docker_ready_utc": "2026-09-19T21:09:32Z",
+    "desktop_gui_started_utc": "2026-09-19T21:10:58Z",
+    "desktop_backend_started_utc": "2026-09-19T21:10:59Z",
+    "inference": "The helper observed native Docker before Desktop launched; Desktop was not the enrolled engine dependency."
+  }
+}

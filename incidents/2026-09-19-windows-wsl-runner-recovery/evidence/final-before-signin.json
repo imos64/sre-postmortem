@@ -1,0 +1,39 @@
+{
+  "verdict": "PASS_AUTOMATIC_PLATFORM_RECOVERY_BEFORE_SIGN_IN",
+  "verified_utc": "2026-09-20T03:17:19.809660+00:00",
+  "windows_boot": "2026-09-20T02:58:25.5000000Z",
+  "task_session": 0,
+  "task_last_run_utc": "2026-09-20T02:59:06.0000000Z",
+  "wrapper_started": "2026-09-20T02:59:07.6192734Z",
+  "keeper_active": "2026-09-20T02:59:20.8310024Z",
+  "single_continuous_wrapper_launch": true,
+  "wrapper_session_samples_known_signed_out": 61,
+  "independent_session_samples_known_signed_out": 60,
+  "first_known_signed_out": "2026-09-20T02:59:07.6943119Z",
+  "last_known_signed_out": "2026-09-20T03:09:12.4967190Z",
+  "signed_out_observation_span_seconds": 604.802408,
+  "first_interactive_logon": "2026-09-20T03:11:24.5001400Z",
+  "boot_to_logon_seconds": 779.00014,
+  "full_platform_ready": "2026-09-20T03:01:21.272672+00:00",
+  "automatic_proof_finished": "2026-09-20T03:04:38.994398+00:00",
+  "proof_finished_before_signin_seconds": 405.505742,
+  "accepted_heartbeats": 12,
+  "heartbeat_span_seconds": 180.21,
+  "automated_observation_seconds": 309.77,
+  "state": "READY_WITH_WARNINGS",
+  "errors": [],
+  "warnings": [
+    "kind-dev:no-ready-endpoint:hlf-orderer/raft-orderer-headless",
+    "kind-dev:no-ready-endpoint:hlf-orderer/v2-raft-orderer-headless"
+  ],
+  "task_xml_unchanged": true,
+  "signin_policy_unchanged": true,
+  "credentials_read_or_rotated": false,
+  "postboot_audit_started_services_tasks_or_distro": false,
+  "codex_first_postboot_read": "2026-09-20T03:13:51Z",
+  "limitations": [
+    "two pre-existing headless-Service endpoint warnings remain",
+    "benchmark authentication/heartbeats verified without replaying paid trials"
+  ],
+  "guarded_windows_rollback_dry_run": "PASS"
+}
